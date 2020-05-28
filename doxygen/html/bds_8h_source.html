@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Исходный файл C:/Users/kicha/Documents/Qt/parser/bds.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('bds_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bds.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bds_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BDS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BDS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="reader_8h.html">reader.h</a>&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_b_d_s.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_b_d_s.html">BDS</a>:<span class="keyword">public</span> <a class="code" href="class_reader.html">Reader</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html">   26</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_b_d_s_1_1_data.html">Data</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#aba1c8a6251af8436944f1fe6bc09b442">   27</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="struct_b_d_s_1_1_data.html#aba1c8a6251af8436944f1fe6bc09b442">sectionLength</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#a6b8544f46e3729876039a09cf9f31032">   28</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_b_d_s_1_1_data.html#a6b8544f46e3729876039a09cf9f31032">flag</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#abb7a6775ee7ffe860faa39c967dd2ce2">   29</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_b_d_s_1_1_data.html#abb7a6775ee7ffe860faa39c967dd2ce2">simplePack</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#a0d037ac6d799a37f4cb9a6448727dfdb">   30</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_b_d_s_1_1_data.html#a0d037ac6d799a37f4cb9a6448727dfdb">fPoint</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#ab86c45dda08ed43d2eafe878b896be08">   31</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_b_d_s_1_1_data.html#ab86c45dda08ed43d2eafe878b896be08">mapPoint</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#a26a8a74f0fdc630bbfd04a127cb82f67">   32</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_b_d_s_1_1_data.html#a26a8a74f0fdc630bbfd04a127cb82f67">addflag</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#aae5ee96fa53f03ae110ee67b19786929">   33</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_b_d_s_1_1_data.html#aae5ee96fa53f03ae110ee67b19786929">E</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#a56b41613d5bc64360cc37c12ce5c77fb">   34</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_b_d_s_1_1_data.html#a56b41613d5bc64360cc37c12ce5c77fb">refValue</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#ae5c6718ea7ae1734ab2a295940615f78">   35</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="struct_b_d_s_1_1_data.html#ae5c6718ea7ae1734ab2a295940615f78">bit</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_b_d_s_1_1_data.html#a8b74be6ae8a494a397b94e3146045ae4">   36</a></span>&#160;        QList&lt;float&gt; <a class="code" href="struct_b_d_s_1_1_data.html#a8b74be6ae8a494a397b94e3146045ae4">pointData</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_b_d_s.html#aefc7ff8058b262946d3bd50f347202cc">   39</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structuni_data.html">uniData</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_b_d_s.html#a5d9e7317dd46858039a8273cc9b2a929">   40</a></span>&#160;    <a class="code" href="class_b_d_s.html#a5d9e7317dd46858039a8273cc9b2a929">BDS</a>(){};</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_b_d_s.html#ac183a8e3d652780a20178f00c4989621">   41</a></span>&#160;    <a class="code" href="class_b_d_s.html#ac183a8e3d652780a20178f00c4989621">~BDS</a>(){};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_d_s.html#a7c82e6a38fdbae59b7897188ab659a30">readSec</a>(ifstream *file, Data* d, <span class="keywordtype">int</span> D, <span class="keywordtype">string</span> type, <span class="keywordtype">int</span> scanFlag,<span class="keywordtype">int</span> Ni,<span class="keywordtype">int</span> Nj);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_d_s.html#ac487297673cc837a1870a368b1647e12">ref</a>(<span class="keywordtype">float</span> *,<span class="keywordtype">char</span> a, <span class="keywordtype">char</span> b, <span class="keywordtype">char</span> c, <span class="keywordtype">char</span> d);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//https://www.geeksforgeeks.org/bitwise-and-of-n-binary-strings/</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span>    QList&lt;float&gt; <a class="code" href="class_b_d_s.html#ae21d8845c3ec001a3089abe1b15eca0c">simple</a>(ifstream *file,Data* d, <span class="keywordtype">int</span> D);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_d_s.html#a4dbbba8e69297df7b5e31e002e79b2fd">bitData</a>(<span class="keywordtype">size_t</span> bit, <span class="keywordtype">string</span> data, vector&lt;int&gt;* dataF );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_d_s.html#a6e5519478b579381f1c55ba9050b1e07">directionMinusI</a>(QList&lt;float&gt;*,<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_d_s.html#acd2e85f5727cbb6a9957f3d25b33a38c">directionPlusJ</a>(QList&lt;float&gt; *data, <span class="keywordtype">int</span> Nj,<span class="keywordtype">int</span> Ni);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // BDS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_aba1c8a6251af8436944f1fe6bc09b442"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#aba1c8a6251af8436944f1fe6bc09b442">BDS::Data::sectionLength</a></div><div class="ttdeci">long sectionLength</div><div class="ttdoc">Длина раздела</div><div class="ttdef"><b>Definition:</b> bds.h:27</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_a26a8a74f0fdc630bbfd04a127cb82f67"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#a26a8a74f0fdc630bbfd04a127cb82f67">BDS::Data::addflag</a></div><div class="ttdeci">bool addflag</div><div class="ttdoc">Нет дополнительных флагов</div><div class="ttdef"><b>Definition:</b> bds.h:32</div></div>
+<div class="ttc" id="astructuni_data_html"><div class="ttname"><a href="structuni_data.html">uniData</a></div><div class="ttdef"><b>Definition:</b> parser.h:14</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_a8b74be6ae8a494a397b94e3146045ae4"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#a8b74be6ae8a494a397b94e3146045ae4">BDS::Data::pointData</a></div><div class="ttdeci">QList&lt; float &gt; pointData</div><div class="ttdoc">Данные</div><div class="ttdef"><b>Definition:</b> bds.h:36</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_a6b8544f46e3729876039a09cf9f31032"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#a6b8544f46e3729876039a09cf9f31032">BDS::Data::flag</a></div><div class="ttdeci">int flag</div><div class="ttdoc">Флаг, количество неиспользуемых бит в конце раздела</div><div class="ttdef"><b>Definition:</b> bds.h:28</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_ab86c45dda08ed43d2eafe878b896be08"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#ab86c45dda08ed43d2eafe878b896be08">BDS::Data::mapPoint</a></div><div class="ttdeci">bool mapPoint</div><div class="ttdoc">Данные по точкам сетки</div><div class="ttdef"><b>Definition:</b> bds.h:31</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_ae5c6718ea7ae1734ab2a295940615f78"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#ae5c6718ea7ae1734ab2a295940615f78">BDS::Data::bit</a></div><div class="ttdeci">size_t bit</div><div class="ttdoc">Количество битов, содержащих каждую пакетную величину</div><div class="ttdef"><b>Definition:</b> bds.h:35</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html"><div class="ttname"><a href="struct_b_d_s_1_1_data.html">BDS::Data</a></div><div class="ttdoc">Структура данных, описывающая содержание раздела двоичных данных</div><div class="ttdef"><b>Definition:</b> bds.h:26</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_a0d037ac6d799a37f4cb9a6448727dfdb"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#a0d037ac6d799a37f4cb9a6448727dfdb">BDS::Data::fPoint</a></div><div class="ttdeci">bool fPoint</div><div class="ttdoc">Представленные величины с плавающей запятой (в первоначальных данных)</div><div class="ttdef"><b>Definition:</b> bds.h:30</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_abb7a6775ee7ffe860faa39c967dd2ce2"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#abb7a6775ee7ffe860faa39c967dd2ce2">BDS::Data::simplePack</a></div><div class="ttdeci">bool simplePack</div><div class="ttdoc">Простая упаковка</div><div class="ttdef"><b>Definition:</b> bds.h:29</div></div>
+<div class="ttc" id="aclass_b_d_s_html_a4dbbba8e69297df7b5e31e002e79b2fd"><div class="ttname"><a href="class_b_d_s.html#a4dbbba8e69297df7b5e31e002e79b2fd">BDS::bitData</a></div><div class="ttdeci">void bitData(size_t bit, string data, vector&lt; int &gt; *dataF)</div><div class="ttdoc">Разбивает строку на данные размером bit.</div><div class="ttdef"><b>Definition:</b> bds.cpp:85</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_a56b41613d5bc64360cc37c12ce5c77fb"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#a56b41613d5bc64360cc37c12ce5c77fb">BDS::Data::refValue</a></div><div class="ttdeci">float refValue</div><div class="ttdoc">Величина начала отсчета(минимум пакетных величинх</div><div class="ttdef"><b>Definition:</b> bds.h:34</div></div>
+<div class="ttc" id="aclass_b_d_s_html_a5d9e7317dd46858039a8273cc9b2a929"><div class="ttname"><a href="class_b_d_s.html#a5d9e7317dd46858039a8273cc9b2a929">BDS::BDS</a></div><div class="ttdeci">BDS()</div><div class="ttdef"><b>Definition:</b> bds.h:40</div></div>
+<div class="ttc" id="aclass_b_d_s_html"><div class="ttname"><a href="class_b_d_s.html">BDS</a></div><div class="ttdoc">Раздел 4. Раздел двоичных данных.</div><div class="ttdef"><b>Definition:</b> bds.h:21</div></div>
+<div class="ttc" id="aclass_b_d_s_html_a7c82e6a38fdbae59b7897188ab659a30"><div class="ttname"><a href="class_b_d_s.html#a7c82e6a38fdbae59b7897188ab659a30">BDS::readSec</a></div><div class="ttdeci">void readSec(ifstream *file, Data *d, int D, string type, int scanFlag, int Ni, int Nj)</div><div class="ttdoc">Чтение раздела</div><div class="ttdef"><b>Definition:</b> bds.cpp:3</div></div>
+<div class="ttc" id="areader_8h_html"><div class="ttname"><a href="reader_8h.html">reader.h</a></div></div>
+<div class="ttc" id="aclass_b_d_s_html_ac487297673cc837a1870a368b1647e12"><div class="ttname"><a href="class_b_d_s.html#ac487297673cc837a1870a368b1647e12">BDS::ref</a></div><div class="ttdeci">void ref(float *, char a, char b, char c, char d)</div><div class="ttdoc">Вычисляет референсное значение</div><div class="ttdef"><b>Definition:</b> bds.cpp:39</div></div>
+<div class="ttc" id="aclass_reader_html"><div class="ttname"><a href="class_reader.html">Reader</a></div><div class="ttdef"><b>Definition:</b> reader.h:12</div></div>
+<div class="ttc" id="aclass_b_d_s_html_a6e5519478b579381f1c55ba9050b1e07"><div class="ttname"><a href="class_b_d_s.html#a6e5519478b579381f1c55ba9050b1e07">BDS::directionMinusI</a></div><div class="ttdeci">void directionMinusI(QList&lt; float &gt; *, int, int)</div><div class="ttdef"><b>Definition:</b> bds.cpp:145</div></div>
+<div class="ttc" id="aclass_b_d_s_html_ac183a8e3d652780a20178f00c4989621"><div class="ttname"><a href="class_b_d_s.html#ac183a8e3d652780a20178f00c4989621">BDS::~BDS</a></div><div class="ttdeci">~BDS()</div><div class="ttdef"><b>Definition:</b> bds.h:41</div></div>
+<div class="ttc" id="astruct_b_d_s_1_1_data_html_aae5ee96fa53f03ae110ee67b19786929"><div class="ttname"><a href="struct_b_d_s_1_1_data.html#aae5ee96fa53f03ae110ee67b19786929">BDS::Data::E</a></div><div class="ttdeci">int E</div><div class="ttdoc">Масштабный коэффициент</div><div class="ttdef"><b>Definition:</b> bds.h:33</div></div>
+<div class="ttc" id="aclass_b_d_s_html_acd2e85f5727cbb6a9957f3d25b33a38c"><div class="ttname"><a href="class_b_d_s.html#acd2e85f5727cbb6a9957f3d25b33a38c">BDS::directionPlusJ</a></div><div class="ttdeci">void directionPlusJ(QList&lt; float &gt; *data, int Nj, int Ni)</div><div class="ttdef"><b>Definition:</b> bds.cpp:154</div></div>
+<div class="ttc" id="aclass_b_d_s_html_ae21d8845c3ec001a3089abe1b15eca0c"><div class="ttname"><a href="class_b_d_s.html#ae21d8845c3ec001a3089abe1b15eca0c">BDS::simple</a></div><div class="ttdeci">QList&lt; float &gt; simple(ifstream *file, Data *d, int D)</div><div class="ttdoc">Расшифровывает простую упаковку</div><div class="ttdef"><b>Definition:</b> bds.cpp:54</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ecc0daaf6d1858b41148c21ca78b7518.html">Qt</a></li><li class="navelem"><a class="el" href="dir_1b7303f86ddf0d01e1ddc826cd74b4a8.html">parser</a></li><li class="navelem"><a class="el" href="bds_8h.html">bds.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

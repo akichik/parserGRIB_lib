@@ -1,0 +1,237 @@
+\hypertarget{struct_g_d_s_1_1_data}{}\doxysection{Структура G\+DS\+::Data}
+\label{struct_g_d_s_1_1_data}\index{GDS::Data@{GDS::Data}}
+
+
+Структура данных, описывающая содержание раздела описания сетки  
+
+
+
+
+{\ttfamily \#include $<$gds.\+h$>$}
+
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{struct_g_d_s_1_1_data_a4274f10d05e695d6e286ad7f09d43ec5}{section\+Length}}
+\begin{DoxyCompactList}\small\item\em $<$ Длина раздела \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a4b0c81b1e6905781f5427a232002ad1f}{NV}}
+\begin{DoxyCompactList}\small\item\em Количество параметров вертикальной координаты \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_aaf2861f66b1a4a9831b1128f67d930a4}{P\+V\+\_\+\+LV}}
+\begin{DoxyCompactList}\small\item\em Номер октета перечня параметров верткальной координат \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_g_d_s_1_1_data_ac858105e2bd8da0d3e38e744293454c0}{Data\+Type}}
+\begin{DoxyCompactList}\small\item\em Тип представления данных \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a006a3c5960d8a5fcd560ea0b15712199}{Ni}}
+\begin{DoxyCompactList}\small\item\em Количество точек вдоль параллель \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a976a16e1e17747521c5d5baa36d13506}{Nj}}
+\begin{DoxyCompactList}\small\item\em Количество тчоек вдоль меридиана \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a2f6c2c2134bcc4fca9452846e70e2741}{point\+Quantity}}
+\begin{DoxyCompactList}\small\item\em Общее количество точек \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a0776cba61b809e347a4bbecd7a8bec3d}{La1}}
+\begin{DoxyCompactList}\small\item\em Широта первой точки сетки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_g_d_s_1_1_data_a5da75f678abbfd79f7c962bb52b35f6e}{south\+La1}}
+\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_ad7dde0933873d1eb75eedc9f954fbe26}{Lo1}}
+\begin{DoxyCompactList}\small\item\em Долгота первой точки сетки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_g_d_s_1_1_data_a658063217f535631f9cadaa4f6bdf737}{west\+Lo1}}
+\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_aa09cae361e7d95d7b98fcc881feade78}{flags}}
+\begin{DoxyCompactList}\small\item\em Флаг разрешения и компонентов \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a0edad6bfbbecfdcc6191b49a08934c09}{La2}}
+\begin{DoxyCompactList}\small\item\em Широта последней точки сетки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_g_d_s_1_1_data_a024e52cb5fdfd86e172b35f54d46b28a}{south\+La2}}
+\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a835dfac8bfd7a447ec390a4506ebed68}{Lo2}}
+\begin{DoxyCompactList}\small\item\em Долгота последней точки сетки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_g_d_s_1_1_data_ac3dc86e9929a7e53bfc2922a267b75d0}{west\+Lo2}}
+\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_ab7707c258494d7c834ffe29bf93bb810}{Di}}
+\begin{DoxyCompactList}\small\item\em Приращение в направлении i. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a6d04194e86000f625268f46d0b3db06e}{Dj\+\_\+N}}
+\begin{DoxyCompactList}\small\item\em Приращение в направлении j. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_g_d_s_1_1_data_a24781e6a9806a5301884101ad613422c}{scan\+Flags}}
+\begin{DoxyCompactList}\small\item\em Режим сканирования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Структура данных, описывающая содержание раздела описания сетки 
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_ac858105e2bd8da0d3e38e744293454c0}\label{struct_g_d_s_1_1_data_ac858105e2bd8da0d3e38e744293454c0}} 
+\index{GDS::Data@{GDS::Data}!DataType@{DataType}}
+\index{DataType@{DataType}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{DataType}{DataType}}
+{\footnotesize\ttfamily string G\+D\+S\+::\+Data\+::\+Data\+Type}
+
+
+
+Тип представления данных 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_ab7707c258494d7c834ffe29bf93bb810}\label{struct_g_d_s_1_1_data_ab7707c258494d7c834ffe29bf93bb810}} 
+\index{GDS::Data@{GDS::Data}!Di@{Di}}
+\index{Di@{Di}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{Di}{Di}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+Di}
+
+
+
+Приращение в направлении i. 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a6d04194e86000f625268f46d0b3db06e}\label{struct_g_d_s_1_1_data_a6d04194e86000f625268f46d0b3db06e}} 
+\index{GDS::Data@{GDS::Data}!Dj\_N@{Dj\_N}}
+\index{Dj\_N@{Dj\_N}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{Dj\_N}{Dj\_N}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+Dj\+\_\+N}
+
+
+
+Приращение в направлении j. 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_aa09cae361e7d95d7b98fcc881feade78}\label{struct_g_d_s_1_1_data_aa09cae361e7d95d7b98fcc881feade78}} 
+\index{GDS::Data@{GDS::Data}!flags@{flags}}
+\index{flags@{flags}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::flags}
+
+
+
+Флаг разрешения и компонентов 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a0776cba61b809e347a4bbecd7a8bec3d}\label{struct_g_d_s_1_1_data_a0776cba61b809e347a4bbecd7a8bec3d}} 
+\index{GDS::Data@{GDS::Data}!La1@{La1}}
+\index{La1@{La1}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{La1}{La1}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+La1}
+
+
+
+Широта первой точки сетки 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a0edad6bfbbecfdcc6191b49a08934c09}\label{struct_g_d_s_1_1_data_a0edad6bfbbecfdcc6191b49a08934c09}} 
+\index{GDS::Data@{GDS::Data}!La2@{La2}}
+\index{La2@{La2}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{La2}{La2}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+La2}
+
+
+
+Широта последней точки сетки 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_ad7dde0933873d1eb75eedc9f954fbe26}\label{struct_g_d_s_1_1_data_ad7dde0933873d1eb75eedc9f954fbe26}} 
+\index{GDS::Data@{GDS::Data}!Lo1@{Lo1}}
+\index{Lo1@{Lo1}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{Lo1}{Lo1}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+Lo1}
+
+
+
+Долгота первой точки сетки 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a835dfac8bfd7a447ec390a4506ebed68}\label{struct_g_d_s_1_1_data_a835dfac8bfd7a447ec390a4506ebed68}} 
+\index{GDS::Data@{GDS::Data}!Lo2@{Lo2}}
+\index{Lo2@{Lo2}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{Lo2}{Lo2}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+Lo2}
+
+
+
+Долгота последней точки сетки 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a006a3c5960d8a5fcd560ea0b15712199}\label{struct_g_d_s_1_1_data_a006a3c5960d8a5fcd560ea0b15712199}} 
+\index{GDS::Data@{GDS::Data}!Ni@{Ni}}
+\index{Ni@{Ni}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{Ni}{Ni}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+Ni}
+
+
+
+Количество точек вдоль параллель 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a976a16e1e17747521c5d5baa36d13506}\label{struct_g_d_s_1_1_data_a976a16e1e17747521c5d5baa36d13506}} 
+\index{GDS::Data@{GDS::Data}!Nj@{Nj}}
+\index{Nj@{Nj}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{Nj}{Nj}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+Nj}
+
+
+
+Количество тчоек вдоль меридиана 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a4b0c81b1e6905781f5427a232002ad1f}\label{struct_g_d_s_1_1_data_a4b0c81b1e6905781f5427a232002ad1f}} 
+\index{GDS::Data@{GDS::Data}!NV@{NV}}
+\index{NV@{NV}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{NV}{NV}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+NV}
+
+
+
+Количество параметров вертикальной координаты 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a2f6c2c2134bcc4fca9452846e70e2741}\label{struct_g_d_s_1_1_data_a2f6c2c2134bcc4fca9452846e70e2741}} 
+\index{GDS::Data@{GDS::Data}!pointQuantity@{pointQuantity}}
+\index{pointQuantity@{pointQuantity}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{pointQuantity}{pointQuantity}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::point\+Quantity}
+
+
+
+Общее количество точек 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_aaf2861f66b1a4a9831b1128f67d930a4}\label{struct_g_d_s_1_1_data_aaf2861f66b1a4a9831b1128f67d930a4}} 
+\index{GDS::Data@{GDS::Data}!PV\_LV@{PV\_LV}}
+\index{PV\_LV@{PV\_LV}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{PV\_LV}{PV\_LV}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::\+P\+V\+\_\+\+LV}
+
+
+
+Номер октета перечня параметров верткальной координат 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a24781e6a9806a5301884101ad613422c}\label{struct_g_d_s_1_1_data_a24781e6a9806a5301884101ad613422c}} 
+\index{GDS::Data@{GDS::Data}!scanFlags@{scanFlags}}
+\index{scanFlags@{scanFlags}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{scanFlags}{scanFlags}}
+{\footnotesize\ttfamily int G\+D\+S\+::\+Data\+::scan\+Flags}
+
+
+
+Режим сканирования 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a4274f10d05e695d6e286ad7f09d43ec5}\label{struct_g_d_s_1_1_data_a4274f10d05e695d6e286ad7f09d43ec5}} 
+\index{GDS::Data@{GDS::Data}!sectionLength@{sectionLength}}
+\index{sectionLength@{sectionLength}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{sectionLength}{sectionLength}}
+{\footnotesize\ttfamily long G\+D\+S\+::\+Data\+::section\+Length}
+
+
+
+$<$ Длина раздела 
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a5da75f678abbfd79f7c962bb52b35f6e}\label{struct_g_d_s_1_1_data_a5da75f678abbfd79f7c962bb52b35f6e}} 
+\index{GDS::Data@{GDS::Data}!southLa1@{southLa1}}
+\index{southLa1@{southLa1}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{southLa1}{southLa1}}
+{\footnotesize\ttfamily bool G\+D\+S\+::\+Data\+::south\+La1}
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a024e52cb5fdfd86e172b35f54d46b28a}\label{struct_g_d_s_1_1_data_a024e52cb5fdfd86e172b35f54d46b28a}} 
+\index{GDS::Data@{GDS::Data}!southLa2@{southLa2}}
+\index{southLa2@{southLa2}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{southLa2}{southLa2}}
+{\footnotesize\ttfamily bool G\+D\+S\+::\+Data\+::south\+La2}
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_a658063217f535631f9cadaa4f6bdf737}\label{struct_g_d_s_1_1_data_a658063217f535631f9cadaa4f6bdf737}} 
+\index{GDS::Data@{GDS::Data}!westLo1@{westLo1}}
+\index{westLo1@{westLo1}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{westLo1}{westLo1}}
+{\footnotesize\ttfamily bool G\+D\+S\+::\+Data\+::west\+Lo1}
+
+\mbox{\Hypertarget{struct_g_d_s_1_1_data_ac3dc86e9929a7e53bfc2922a267b75d0}\label{struct_g_d_s_1_1_data_ac3dc86e9929a7e53bfc2922a267b75d0}} 
+\index{GDS::Data@{GDS::Data}!westLo2@{westLo2}}
+\index{westLo2@{westLo2}!GDS::Data@{GDS::Data}}
+\doxysubsubsection{\texorpdfstring{westLo2}{westLo2}}
+{\footnotesize\ttfamily bool G\+D\+S\+::\+Data\+::west\+Lo2}
+
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{gds_8h}{gds.\+h}}\end{DoxyCompactItemize}

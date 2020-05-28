@@ -1,0 +1,115 @@
+\hypertarget{class_g_d_s}{}\doxysection{Класс G\+DS}
+\label{class_g_d_s}\index{GDS@{GDS}}
+
+
+Раздел 2. Раздел описания сетки.  
+
+
+
+
+{\ttfamily \#include $<$gds.\+h$>$}
+
+Граф наследования\+:G\+DS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_d_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}}
+\begin{DoxyCompactList}\small\item\em Структура данных, описывающая содержание раздела описания сетки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_d_s_ab84089d323c69a0ffeb460d077eb02da}{G\+DS}} ()
+\item 
+\mbox{\hyperlink{class_g_d_s_adccea1172e8af8b85b98e421bf6bcd9e}{$\sim$\+G\+DS}} ()
+\item 
+void \mbox{\hyperlink{class_g_d_s_a94aff9e518923c9b7c049051e3fabd03}{read\+Sec}} (ifstream $\ast$file, \mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}} $\ast$d)
+\item 
+string \mbox{\hyperlink{class_g_d_s_a63e475a2a4a35518fdc1a1e044acacc6}{data\+Type}} (char data\+Type)
+\item 
+void \mbox{\hyperlink{class_g_d_s_add015d08b0faa6ad7a02eef2e97e9814}{type\+Lan\+Lon}} (ifstream $\ast$file, \mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}} $\ast$d)
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{class_g_d_s_aefc7ff8058b262946d3bd50f347202cc}{uni\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Раздел 2. Раздел описания сетки. 
+
+Данный отдел не является обязательный. Содержание\+: Длина раздела, геометрия сетки, если необходимо 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_g_d_s_ab84089d323c69a0ffeb460d077eb02da}\label{class_g_d_s_ab84089d323c69a0ffeb460d077eb02da}} 
+\index{GDS@{GDS}!GDS@{GDS}}
+\index{GDS@{GDS}!GDS@{GDS}}
+\doxysubsubsection{\texorpdfstring{GDS()}{GDS()}}
+{\footnotesize\ttfamily G\+D\+S\+::\+G\+DS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_g_d_s_adccea1172e8af8b85b98e421bf6bcd9e}\label{class_g_d_s_adccea1172e8af8b85b98e421bf6bcd9e}} 
+\index{GDS@{GDS}!````~GDS@{$\sim$GDS}}
+\index{````~GDS@{$\sim$GDS}!GDS@{GDS}}
+\doxysubsubsection{\texorpdfstring{$\sim$GDS()}{~GDS()}}
+{\footnotesize\ttfamily G\+D\+S\+::$\sim$\+G\+DS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_g_d_s_a63e475a2a4a35518fdc1a1e044acacc6}\label{class_g_d_s_a63e475a2a4a35518fdc1a1e044acacc6}} 
+\index{GDS@{GDS}!dataType@{dataType}}
+\index{dataType@{dataType}!GDS@{GDS}}
+\doxysubsubsection{\texorpdfstring{dataType()}{dataType()}}
+{\footnotesize\ttfamily string G\+D\+S\+::data\+Type (\begin{DoxyParamCaption}\item[{char}]{data\+Type }\end{DoxyParamCaption})}
+
+Определение вида сетки в соответсвии с типом представления данных 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em data\+Type} & тип представления данных \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_d_s_a94aff9e518923c9b7c049051e3fabd03}\label{class_g_d_s_a94aff9e518923c9b7c049051e3fabd03}} 
+\index{GDS@{GDS}!readSec@{readSec}}
+\index{readSec@{readSec}!GDS@{GDS}}
+\doxysubsubsection{\texorpdfstring{readSec()}{readSec()}}
+{\footnotesize\ttfamily void G\+D\+S\+::read\+Sec (\begin{DoxyParamCaption}\item[{ifstream $\ast$}]{file,  }\item[{\mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+Чтение секции 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Указатель на файл кодировки grb \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Указатель на структуру \mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_d_s_add015d08b0faa6ad7a02eef2e97e9814}\label{class_g_d_s_add015d08b0faa6ad7a02eef2e97e9814}} 
+\index{GDS@{GDS}!typeLanLon@{typeLanLon}}
+\index{typeLanLon@{typeLanLon}!GDS@{GDS}}
+\doxysubsubsection{\texorpdfstring{typeLanLon()}{typeLanLon()}}
+{\footnotesize\ttfamily void G\+D\+S\+::type\+Lan\+Lon (\begin{DoxyParamCaption}\item[{ifstream $\ast$}]{file,  }\item[{\mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+Определение широтно-\/долготной сетки 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Указатель на файл кодировки grb \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Указатель на структуру \mbox{\hyperlink{struct_g_d_s_1_1_data}{Data}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_g_d_s_aefc7ff8058b262946d3bd50f347202cc}\label{class_g_d_s_aefc7ff8058b262946d3bd50f347202cc}} 
+\index{GDS@{GDS}!uniData@{uniData}}
+\index{uniData@{uniData}!GDS@{GDS}}
+\doxysubsubsection{\texorpdfstring{uniData}{uniData}}
+{\footnotesize\ttfamily friend struct \mbox{\hyperlink{structuni_data}{uni\+Data}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{gds_8h}{gds.\+h}}\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{gds_8cpp}{gds.\+cpp}}\end{DoxyCompactItemize}

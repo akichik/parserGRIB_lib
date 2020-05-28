@@ -1,0 +1,184 @@
+\hypertarget{class_p_d_s}{}\doxysection{Класс P\+DS}
+\label{class_p_d_s}\index{PDS@{PDS}}
+
+
+Раздел 1. Раздел определения продукции.  
+
+
+
+
+{\ttfamily \#include $<$pds.\+h$>$}
+
+Граф наследования\+:P\+DS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_d_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_d_s_1_1_data}{Data}}
+\begin{DoxyCompactList}\small\item\em Структура данных, описывающая содержание раздела определения продукции \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_d_s_a10beece5cc673bfdc272cc7eef5464b7}{P\+DS}} ()
+\item 
+\mbox{\hyperlink{class_p_d_s_a763242a02d67b7958bdd7ee19282b42e}{$\sim$\+P\+DS}} ()
+\item 
+void \mbox{\hyperlink{class_p_d_s_afb6e6b1acd170e55345e002baa6dded5}{read\+Sec}} (ifstream $\ast$file, \mbox{\hyperlink{struct_p_d_s_1_1_data}{Data}} $\ast$d)
+\item 
+long long \mbox{\hyperlink{class_p_d_s_a87b0e42191da4ccbbb4e90ef2cdaea91}{U\+T\+C\+\_\+mktime}} (int \mbox{\hyperlink{tablessection1_8h_add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8}{year}}, int \mbox{\hyperlink{tablessection1_8h_add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286}{month}}, int \mbox{\hyperlink{tablessection1_8h_add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8}{day}}, int \mbox{\hyperlink{tablessection1_8h_add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3}{hour}}, int min, int sec)
+\item 
+void \mbox{\hyperlink{class_p_d_s_a4a45a5d285638b38dca9a863dd0be4d6}{factorD}} (int $\ast$, char a, char b)
+\item 
+string \mbox{\hyperlink{class_p_d_s_a924c7c5a8546ac6df7f180e441285ff7}{center\+Indentification}} (char a)
+\item 
+string \mbox{\hyperlink{class_p_d_s_a3899a2091c8fa4b1212949df98b5d011}{data\+Type}} (char a)
+\item 
+int \mbox{\hyperlink{class_p_d_s_ad4f73563380120a367848e9d739d10ba}{period}} (int unit, int P1, int P2, int range)
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{class_p_d_s_aefc7ff8058b262946d3bd50f347202cc}{uni\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Раздел 1. Раздел определения продукции. 
+
+Содержание\+: Длина раздела, идентификация закодированного анализа или прогноза 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_p_d_s_a10beece5cc673bfdc272cc7eef5464b7}\label{class_p_d_s_a10beece5cc673bfdc272cc7eef5464b7}} 
+\index{PDS@{PDS}!PDS@{PDS}}
+\index{PDS@{PDS}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{PDS()}{PDS()}}
+{\footnotesize\ttfamily P\+D\+S\+::\+P\+DS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_p_d_s_a763242a02d67b7958bdd7ee19282b42e}\label{class_p_d_s_a763242a02d67b7958bdd7ee19282b42e}} 
+\index{PDS@{PDS}!````~PDS@{$\sim$PDS}}
+\index{````~PDS@{$\sim$PDS}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{$\sim$PDS()}{~PDS()}}
+{\footnotesize\ttfamily P\+D\+S\+::$\sim$\+P\+DS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_p_d_s_a924c7c5a8546ac6df7f180e441285ff7}\label{class_p_d_s_a924c7c5a8546ac6df7f180e441285ff7}} 
+\index{PDS@{PDS}!centerIndentification@{centerIndentification}}
+\index{centerIndentification@{centerIndentification}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{centerIndentification()}{centerIndentification()}}
+{\footnotesize\ttfamily string P\+D\+S\+::center\+Indentification (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})}
+
+Идентификация центра-\/поставщика/производителя продукции 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & содержание октета 5 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+идентификатор центра 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_d_s_a3899a2091c8fa4b1212949df98b5d011}\label{class_p_d_s_a3899a2091c8fa4b1212949df98b5d011}} 
+\index{PDS@{PDS}!dataType@{dataType}}
+\index{dataType@{dataType}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{dataType()}{dataType()}}
+{\footnotesize\ttfamily string P\+D\+S\+::data\+Type (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})}
+
+Идентификация параметра 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & содержание октета 9 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+тип данных 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_d_s_a4a45a5d285638b38dca9a863dd0be4d6}\label{class_p_d_s_a4a45a5d285638b38dca9a863dd0be4d6}} 
+\index{PDS@{PDS}!factorD@{factorD}}
+\index{factorD@{factorD}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{factorD()}{factorD()}}
+{\footnotesize\ttfamily void P\+D\+S\+::factorD (\begin{DoxyParamCaption}\item[{int $\ast$}]{D,  }\item[{char}]{a,  }\item[{char}]{b }\end{DoxyParamCaption})}
+
+Вычисление десятичного масштабного коэффициента 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em D} & Указатель на десятичный масштабный коэффициент \\
+\hline
+\mbox{\texttt{ in}}  & {\em a} & содержание октета 27 \\
+\hline
+\mbox{\texttt{ in}}  & {\em a} & содержание октета 28 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_d_s_ad4f73563380120a367848e9d739d10ba}\label{class_p_d_s_ad4f73563380120a367848e9d739d10ba}} 
+\index{PDS@{PDS}!period@{period}}
+\index{period@{period}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{period()}{period()}}
+{\footnotesize\ttfamily int P\+D\+S\+::period (\begin{DoxyParamCaption}\item[{int}]{unit,  }\item[{int}]{P1,  }\item[{int}]{P2,  }\item[{int}]{range }\end{DoxyParamCaption})}
+
+Вычисление периода времени между последовательными анализами 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em unit} & указатель времени \\
+\hline
+\mbox{\texttt{ in}}  & {\em P1} & период времени \\
+\hline
+\mbox{\texttt{ in}}  & {\em P2} & период времени \\
+\hline
+\mbox{\texttt{ in}}  & {\em range} & указатель единицы времени \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+период времени 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_d_s_afb6e6b1acd170e55345e002baa6dded5}\label{class_p_d_s_afb6e6b1acd170e55345e002baa6dded5}} 
+\index{PDS@{PDS}!readSec@{readSec}}
+\index{readSec@{readSec}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{readSec()}{readSec()}}
+{\footnotesize\ttfamily void P\+D\+S\+::read\+Sec (\begin{DoxyParamCaption}\item[{ifstream $\ast$}]{file,  }\item[{\mbox{\hyperlink{struct_p_d_s_1_1_data}{P\+D\+S\+::\+Data}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+Чтение секции 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Указатель на файл кодировки grb \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Указатель на структуру \mbox{\hyperlink{struct_p_d_s_1_1_data}{Data}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_d_s_a87b0e42191da4ccbbb4e90ef2cdaea91}\label{class_p_d_s_a87b0e42191da4ccbbb4e90ef2cdaea91}} 
+\index{PDS@{PDS}!UTC\_mktime@{UTC\_mktime}}
+\index{UTC\_mktime@{UTC\_mktime}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{UTC\_mktime()}{UTC\_mktime()}}
+{\footnotesize\ttfamily long long P\+D\+S\+::\+U\+T\+C\+\_\+mktime (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day,  }\item[{int}]{hour,  }\item[{int}]{min,  }\item[{int}]{sec }\end{DoxyParamCaption})}
+
+Перевод времени в формат U\+TC 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em year} & Год \\
+\hline
+\mbox{\texttt{ in}}  & {\em month} & Месяц \\
+\hline
+\mbox{\texttt{ in}}  & {\em day} & День \\
+\hline
+\mbox{\texttt{ in}}  & {\em hour} & Час \\
+\hline
+\mbox{\texttt{ in}}  & {\em min} & Минуты \\
+\hline
+\mbox{\texttt{ in}}  & {\em sec} & Секунды\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+время в формате U\+TC 
+\end{DoxyReturn}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_p_d_s_aefc7ff8058b262946d3bd50f347202cc}\label{class_p_d_s_aefc7ff8058b262946d3bd50f347202cc}} 
+\index{PDS@{PDS}!uniData@{uniData}}
+\index{uniData@{uniData}!PDS@{PDS}}
+\doxysubsubsection{\texorpdfstring{uniData}{uniData}}
+{\footnotesize\ttfamily friend struct \mbox{\hyperlink{structuni_data}{uni\+Data}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{pds_8h}{pds.\+h}}\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{pds_8cpp}{pds.\+cpp}}\end{DoxyCompactItemize}

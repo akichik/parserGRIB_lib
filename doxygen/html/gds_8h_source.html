@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Исходный файл C:/Users/kicha/Documents/Qt/parser/gds.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('gds_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">gds.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gds_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GDS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GDS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="reader_8h.html">reader.h</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_g_d_s.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_d_s.html">GDS</a>: <span class="keyword">public</span> <a class="code" href="class_reader.html">Reader</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html">   23</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_g_d_s_1_1_data.html">Data</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a4274f10d05e695d6e286ad7f09d43ec5">   25</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="struct_g_d_s_1_1_data.html#a4274f10d05e695d6e286ad7f09d43ec5">sectionLength</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a4b0c81b1e6905781f5427a232002ad1f">   26</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a4b0c81b1e6905781f5427a232002ad1f">NV</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#aaf2861f66b1a4a9831b1128f67d930a4">   27</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#aaf2861f66b1a4a9831b1128f67d930a4">PV_LV</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#ac858105e2bd8da0d3e38e744293454c0">   28</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="struct_g_d_s_1_1_data.html#ac858105e2bd8da0d3e38e744293454c0">DataType</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a006a3c5960d8a5fcd560ea0b15712199">   29</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a006a3c5960d8a5fcd560ea0b15712199">Ni</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a976a16e1e17747521c5d5baa36d13506">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a976a16e1e17747521c5d5baa36d13506">Nj</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a2f6c2c2134bcc4fca9452846e70e2741">   31</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a2f6c2c2134bcc4fca9452846e70e2741">pointQuantity</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a0776cba61b809e347a4bbecd7a8bec3d">   32</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a0776cba61b809e347a4bbecd7a8bec3d">La1</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a5da75f678abbfd79f7c962bb52b35f6e">   33</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_g_d_s_1_1_data.html#a5da75f678abbfd79f7c962bb52b35f6e">southLa1</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#ad7dde0933873d1eb75eedc9f954fbe26">   34</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#ad7dde0933873d1eb75eedc9f954fbe26">Lo1</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a658063217f535631f9cadaa4f6bdf737">   35</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_g_d_s_1_1_data.html#a658063217f535631f9cadaa4f6bdf737">westLo1</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#aa09cae361e7d95d7b98fcc881feade78">   36</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#aa09cae361e7d95d7b98fcc881feade78">flags</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a0edad6bfbbecfdcc6191b49a08934c09">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a0edad6bfbbecfdcc6191b49a08934c09">La2</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a024e52cb5fdfd86e172b35f54d46b28a">   38</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_g_d_s_1_1_data.html#a024e52cb5fdfd86e172b35f54d46b28a">southLa2</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a835dfac8bfd7a447ec390a4506ebed68">   39</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a835dfac8bfd7a447ec390a4506ebed68">Lo2</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#ac3dc86e9929a7e53bfc2922a267b75d0">   40</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_g_d_s_1_1_data.html#ac3dc86e9929a7e53bfc2922a267b75d0">westLo2</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#ab7707c258494d7c834ffe29bf93bb810">   41</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#ab7707c258494d7c834ffe29bf93bb810">Di</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a6d04194e86000f625268f46d0b3db06e">   42</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a6d04194e86000f625268f46d0b3db06e">Dj_N</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_g_d_s_1_1_data.html#a24781e6a9806a5301884101ad613422c">   43</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_g_d_s_1_1_data.html#a24781e6a9806a5301884101ad613422c">scanFlags</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_g_d_s.html#aefc7ff8058b262946d3bd50f347202cc">   46</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structuni_data.html">uniData</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_g_d_s.html#ab84089d323c69a0ffeb460d077eb02da">   47</a></span>&#160;    <a class="code" href="class_g_d_s.html#ab84089d323c69a0ffeb460d077eb02da">GDS</a>(){};</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_g_d_s.html#adccea1172e8af8b85b98e421bf6bcd9e">   48</a></span>&#160;    <a class="code" href="class_g_d_s.html#adccea1172e8af8b85b98e421bf6bcd9e">~GDS</a>(){};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_d_s.html#a94aff9e518923c9b7c049051e3fabd03">readSec</a>(ifstream *file, Data* d);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_g_d_s.html#a63e475a2a4a35518fdc1a1e044acacc6">dataType</a>(<span class="keywordtype">char</span> <a class="code" href="class_g_d_s.html#a63e475a2a4a35518fdc1a1e044acacc6">dataType</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_d_s.html#add015d08b0faa6ad7a02eef2e97e9814">typeLanLon</a>(ifstream *file, Data* d);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // GDS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_g_d_s_html_a94aff9e518923c9b7c049051e3fabd03"><div class="ttname"><a href="class_g_d_s.html#a94aff9e518923c9b7c049051e3fabd03">GDS::readSec</a></div><div class="ttdeci">void readSec(ifstream *file, Data *d)</div><div class="ttdef"><b>Definition:</b> gds.cpp:3</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a976a16e1e17747521c5d5baa36d13506"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a976a16e1e17747521c5d5baa36d13506">GDS::Data::Nj</a></div><div class="ttdeci">int Nj</div><div class="ttdoc">Количество тчоек вдоль меридиана</div><div class="ttdef"><b>Definition:</b> gds.h:30</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a5da75f678abbfd79f7c962bb52b35f6e"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a5da75f678abbfd79f7c962bb52b35f6e">GDS::Data::southLa1</a></div><div class="ttdeci">bool southLa1</div><div class="ttdef"><b>Definition:</b> gds.h:33</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_ad7dde0933873d1eb75eedc9f954fbe26"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#ad7dde0933873d1eb75eedc9f954fbe26">GDS::Data::Lo1</a></div><div class="ttdeci">int Lo1</div><div class="ttdoc">Долгота первой точки сетки</div><div class="ttdef"><b>Definition:</b> gds.h:34</div></div>
+<div class="ttc" id="astructuni_data_html"><div class="ttname"><a href="structuni_data.html">uniData</a></div><div class="ttdef"><b>Definition:</b> parser.h:14</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a0edad6bfbbecfdcc6191b49a08934c09"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a0edad6bfbbecfdcc6191b49a08934c09">GDS::Data::La2</a></div><div class="ttdeci">int La2</div><div class="ttdoc">Широта последней точки сетки</div><div class="ttdef"><b>Definition:</b> gds.h:37</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a6d04194e86000f625268f46d0b3db06e"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a6d04194e86000f625268f46d0b3db06e">GDS::Data::Dj_N</a></div><div class="ttdeci">int Dj_N</div><div class="ttdoc">Приращение в направлении j.</div><div class="ttdef"><b>Definition:</b> gds.h:42</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a24781e6a9806a5301884101ad613422c"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a24781e6a9806a5301884101ad613422c">GDS::Data::scanFlags</a></div><div class="ttdeci">int scanFlags</div><div class="ttdoc">Режим сканирования</div><div class="ttdef"><b>Definition:</b> gds.h:43</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_ac858105e2bd8da0d3e38e744293454c0"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#ac858105e2bd8da0d3e38e744293454c0">GDS::Data::DataType</a></div><div class="ttdeci">string DataType</div><div class="ttdoc">Тип представления данных</div><div class="ttdef"><b>Definition:</b> gds.h:28</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a2f6c2c2134bcc4fca9452846e70e2741"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a2f6c2c2134bcc4fca9452846e70e2741">GDS::Data::pointQuantity</a></div><div class="ttdeci">int pointQuantity</div><div class="ttdoc">Общее количество точек</div><div class="ttdef"><b>Definition:</b> gds.h:31</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_aa09cae361e7d95d7b98fcc881feade78"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#aa09cae361e7d95d7b98fcc881feade78">GDS::Data::flags</a></div><div class="ttdeci">int flags</div><div class="ttdoc">Флаг разрешения и компонентов</div><div class="ttdef"><b>Definition:</b> gds.h:36</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a4b0c81b1e6905781f5427a232002ad1f"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a4b0c81b1e6905781f5427a232002ad1f">GDS::Data::NV</a></div><div class="ttdeci">int NV</div><div class="ttdoc">Количество параметров вертикальной координаты</div><div class="ttdef"><b>Definition:</b> gds.h:26</div></div>
+<div class="ttc" id="aclass_g_d_s_html"><div class="ttname"><a href="class_g_d_s.html">GDS</a></div><div class="ttdoc">Раздел 2. Раздел описания сетки.</div><div class="ttdef"><b>Definition:</b> gds.h:18</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a006a3c5960d8a5fcd560ea0b15712199"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a006a3c5960d8a5fcd560ea0b15712199">GDS::Data::Ni</a></div><div class="ttdeci">int Ni</div><div class="ttdoc">Количество точек вдоль параллель</div><div class="ttdef"><b>Definition:</b> gds.h:29</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a4274f10d05e695d6e286ad7f09d43ec5"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a4274f10d05e695d6e286ad7f09d43ec5">GDS::Data::sectionLength</a></div><div class="ttdeci">long sectionLength</div><div class="ttdoc">&lt; Длина раздела</div><div class="ttdef"><b>Definition:</b> gds.h:25</div></div>
+<div class="ttc" id="areader_8h_html"><div class="ttname"><a href="reader_8h.html">reader.h</a></div></div>
+<div class="ttc" id="aclass_g_d_s_html_add015d08b0faa6ad7a02eef2e97e9814"><div class="ttname"><a href="class_g_d_s.html#add015d08b0faa6ad7a02eef2e97e9814">GDS::typeLanLon</a></div><div class="ttdeci">void typeLanLon(ifstream *file, Data *d)</div><div class="ttdef"><b>Definition:</b> gds.cpp:45</div></div>
+<div class="ttc" id="aclass_g_d_s_html_a63e475a2a4a35518fdc1a1e044acacc6"><div class="ttname"><a href="class_g_d_s.html#a63e475a2a4a35518fdc1a1e044acacc6">GDS::dataType</a></div><div class="ttdeci">string dataType(char dataType)</div><div class="ttdef"><b>Definition:</b> gds.cpp:29</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_aaf2861f66b1a4a9831b1128f67d930a4"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#aaf2861f66b1a4a9831b1128f67d930a4">GDS::Data::PV_LV</a></div><div class="ttdeci">int PV_LV</div><div class="ttdoc">Номер октета перечня параметров верткальной координат</div><div class="ttdef"><b>Definition:</b> gds.h:27</div></div>
+<div class="ttc" id="aclass_reader_html"><div class="ttname"><a href="class_reader.html">Reader</a></div><div class="ttdef"><b>Definition:</b> reader.h:12</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a024e52cb5fdfd86e172b35f54d46b28a"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a024e52cb5fdfd86e172b35f54d46b28a">GDS::Data::southLa2</a></div><div class="ttdeci">bool southLa2</div><div class="ttdef"><b>Definition:</b> gds.h:38</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a658063217f535631f9cadaa4f6bdf737"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a658063217f535631f9cadaa4f6bdf737">GDS::Data::westLo1</a></div><div class="ttdeci">bool westLo1</div><div class="ttdef"><b>Definition:</b> gds.h:35</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_ab7707c258494d7c834ffe29bf93bb810"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#ab7707c258494d7c834ffe29bf93bb810">GDS::Data::Di</a></div><div class="ttdeci">int Di</div><div class="ttdoc">Приращение в направлении i.</div><div class="ttdef"><b>Definition:</b> gds.h:41</div></div>
+<div class="ttc" id="aclass_g_d_s_html_ab84089d323c69a0ffeb460d077eb02da"><div class="ttname"><a href="class_g_d_s.html#ab84089d323c69a0ffeb460d077eb02da">GDS::GDS</a></div><div class="ttdeci">GDS()</div><div class="ttdef"><b>Definition:</b> gds.h:47</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html"><div class="ttname"><a href="struct_g_d_s_1_1_data.html">GDS::Data</a></div><div class="ttdoc">Структура данных, описывающая содержание раздела описания сетки</div><div class="ttdef"><b>Definition:</b> gds.h:23</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a835dfac8bfd7a447ec390a4506ebed68"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a835dfac8bfd7a447ec390a4506ebed68">GDS::Data::Lo2</a></div><div class="ttdeci">int Lo2</div><div class="ttdoc">Долгота последней точки сетки</div><div class="ttdef"><b>Definition:</b> gds.h:39</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_ac3dc86e9929a7e53bfc2922a267b75d0"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#ac3dc86e9929a7e53bfc2922a267b75d0">GDS::Data::westLo2</a></div><div class="ttdeci">bool westLo2</div><div class="ttdef"><b>Definition:</b> gds.h:40</div></div>
+<div class="ttc" id="aclass_g_d_s_html_adccea1172e8af8b85b98e421bf6bcd9e"><div class="ttname"><a href="class_g_d_s.html#adccea1172e8af8b85b98e421bf6bcd9e">GDS::~GDS</a></div><div class="ttdeci">~GDS()</div><div class="ttdef"><b>Definition:</b> gds.h:48</div></div>
+<div class="ttc" id="astruct_g_d_s_1_1_data_html_a0776cba61b809e347a4bbecd7a8bec3d"><div class="ttname"><a href="struct_g_d_s_1_1_data.html#a0776cba61b809e347a4bbecd7a8bec3d">GDS::Data::La1</a></div><div class="ttdeci">int La1</div><div class="ttdoc">Широта первой точки сетки</div><div class="ttdef"><b>Definition:</b> gds.h:32</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ecc0daaf6d1858b41148c21ca78b7518.html">Qt</a></li><li class="navelem"><a class="el" href="dir_1b7303f86ddf0d01e1ddc826cd74b4a8.html">parser</a></li><li class="navelem"><a class="el" href="gds_8h.html">gds.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

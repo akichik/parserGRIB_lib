@@ -1,0 +1,172 @@
+\hypertarget{class_b_d_s}{}\doxysection{Класс B\+DS}
+\label{class_b_d_s}\index{BDS@{BDS}}
+
+
+Раздел 4. Раздел двоичных данных.  
+
+
+
+
+{\ttfamily \#include $<$bds.\+h$>$}
+
+Граф наследования\+:B\+DS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_d_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_d_s_1_1_data}{Data}}
+\begin{DoxyCompactList}\small\item\em Структура данных, описывающая содержание раздела двоичных данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_d_s_a5d9e7317dd46858039a8273cc9b2a929}{B\+DS}} ()
+\item 
+\mbox{\hyperlink{class_b_d_s_ac183a8e3d652780a20178f00c4989621}{$\sim$\+B\+DS}} ()
+\item 
+void \mbox{\hyperlink{class_b_d_s_a7c82e6a38fdbae59b7897188ab659a30}{read\+Sec}} (ifstream $\ast$file, \mbox{\hyperlink{struct_b_d_s_1_1_data}{Data}} $\ast$d, int D, string type, int scan\+Flag, int Ni, int Nj)
+\begin{DoxyCompactList}\small\item\em Чтение раздела \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_d_s_ac487297673cc837a1870a368b1647e12}{ref}} (float $\ast$, char a, char b, char c, char d)
+\begin{DoxyCompactList}\small\item\em Вычисляет референсное значение \end{DoxyCompactList}\item 
+Q\+List$<$ float $>$ \mbox{\hyperlink{class_b_d_s_ae21d8845c3ec001a3089abe1b15eca0c}{simple}} (ifstream $\ast$file, \mbox{\hyperlink{struct_b_d_s_1_1_data}{Data}} $\ast$d, int D)
+\begin{DoxyCompactList}\small\item\em Расшифровывает простую упаковку \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_d_s_a4dbbba8e69297df7b5e31e002e79b2fd}{bit\+Data}} (size\+\_\+t bit, string data, vector$<$ int $>$ $\ast$dataF)
+\begin{DoxyCompactList}\small\item\em Разбивает строку на данные размером bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_d_s_a6e5519478b579381f1c55ba9050b1e07}{direction\+MinusI}} (Q\+List$<$ float $>$ $\ast$, int, int)
+\item 
+void \mbox{\hyperlink{class_b_d_s_acd2e85f5727cbb6a9957f3d25b33a38c}{direction\+PlusJ}} (Q\+List$<$ float $>$ $\ast$data, int Nj, int Ni)
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{class_b_d_s_aefc7ff8058b262946d3bd50f347202cc}{uni\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Раздел 4. Раздел двоичных данных. 
+
+Данный отдел не является обязательный. Содержание\+: Длина раздела и величины данных 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_b_d_s_a5d9e7317dd46858039a8273cc9b2a929}\label{class_b_d_s_a5d9e7317dd46858039a8273cc9b2a929}} 
+\index{BDS@{BDS}!BDS@{BDS}}
+\index{BDS@{BDS}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{BDS()}{BDS()}}
+{\footnotesize\ttfamily B\+D\+S\+::\+B\+DS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_d_s_ac183a8e3d652780a20178f00c4989621}\label{class_b_d_s_ac183a8e3d652780a20178f00c4989621}} 
+\index{BDS@{BDS}!````~BDS@{$\sim$BDS}}
+\index{````~BDS@{$\sim$BDS}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{$\sim$BDS()}{~BDS()}}
+{\footnotesize\ttfamily B\+D\+S\+::$\sim$\+B\+DS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_b_d_s_a4dbbba8e69297df7b5e31e002e79b2fd}\label{class_b_d_s_a4dbbba8e69297df7b5e31e002e79b2fd}} 
+\index{BDS@{BDS}!bitData@{bitData}}
+\index{bitData@{bitData}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{bitData()}{bitData()}}
+{\footnotesize\ttfamily void B\+D\+S\+::bit\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{bit,  }\item[{string}]{data,  }\item[{vector$<$ int $>$ $\ast$}]{dataF }\end{DoxyParamCaption})}
+
+
+
+Разбивает строку на данные размером bit. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em bit} & Количество битов, содержащих каждую пакетную величину \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & Строка данных \\
+\hline
+\mbox{\texttt{ in}}  & {\em dataF} & Указатель на вектор данных \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_d_s_a6e5519478b579381f1c55ba9050b1e07}\label{class_b_d_s_a6e5519478b579381f1c55ba9050b1e07}} 
+\index{BDS@{BDS}!directionMinusI@{directionMinusI}}
+\index{directionMinusI@{directionMinusI}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{directionMinusI()}{directionMinusI()}}
+{\footnotesize\ttfamily void B\+D\+S\+::direction\+MinusI (\begin{DoxyParamCaption}\item[{Q\+List$<$ float $>$ $\ast$}]{data,  }\item[{int}]{Ni,  }\item[{int}]{Nj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_d_s_acd2e85f5727cbb6a9957f3d25b33a38c}\label{class_b_d_s_acd2e85f5727cbb6a9957f3d25b33a38c}} 
+\index{BDS@{BDS}!directionPlusJ@{directionPlusJ}}
+\index{directionPlusJ@{directionPlusJ}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{directionPlusJ()}{directionPlusJ()}}
+{\footnotesize\ttfamily void B\+D\+S\+::direction\+PlusJ (\begin{DoxyParamCaption}\item[{Q\+List$<$ float $>$ $\ast$}]{data,  }\item[{int}]{Nj,  }\item[{int}]{Ni }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_d_s_a7c82e6a38fdbae59b7897188ab659a30}\label{class_b_d_s_a7c82e6a38fdbae59b7897188ab659a30}} 
+\index{BDS@{BDS}!readSec@{readSec}}
+\index{readSec@{readSec}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{readSec()}{readSec()}}
+{\footnotesize\ttfamily void B\+D\+S\+::read\+Sec (\begin{DoxyParamCaption}\item[{ifstream $\ast$}]{file,  }\item[{\mbox{\hyperlink{struct_b_d_s_1_1_data}{Data}} $\ast$}]{d,  }\item[{int}]{D,  }\item[{string}]{type,  }\item[{int}]{scan\+Flag,  }\item[{int}]{Ni,  }\item[{int}]{Nj }\end{DoxyParamCaption})}
+
+
+
+Чтение раздела 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Указатель на файл кодировки grb \\
+\hline
+\mbox{\texttt{ in}}  & {\em D} & Десятичный масштабный коэффициент из секции 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Тип данных из секции 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em scan\+Flags} & Флаги сканирования из секции 2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_d_s_ac487297673cc837a1870a368b1647e12}\label{class_b_d_s_ac487297673cc837a1870a368b1647e12}} 
+\index{BDS@{BDS}!ref@{ref}}
+\index{ref@{ref}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily void B\+D\+S\+::ref (\begin{DoxyParamCaption}\item[{float $\ast$}]{ref\+Value,  }\item[{char}]{a,  }\item[{char}]{b,  }\item[{char}]{c,  }\item[{char}]{d }\end{DoxyParamCaption})}
+
+
+
+Вычисляет референсное значение 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em октеты} & 7-\/10 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_d_s_ae21d8845c3ec001a3089abe1b15eca0c}\label{class_b_d_s_ae21d8845c3ec001a3089abe1b15eca0c}} 
+\index{BDS@{BDS}!simple@{simple}}
+\index{simple@{simple}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{simple()}{simple()}}
+{\footnotesize\ttfamily Q\+List$<$ float $>$ B\+D\+S\+::simple (\begin{DoxyParamCaption}\item[{ifstream $\ast$}]{file,  }\item[{\mbox{\hyperlink{struct_b_d_s_1_1_data}{Data}} $\ast$}]{d,  }\item[{int}]{D }\end{DoxyParamCaption})}
+
+
+
+Расшифровывает простую упаковку 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Указатель на файл кодировки grb \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Указатель на структуру \mbox{\hyperlink{struct_b_d_s_1_1_data}{Data}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em D} & Десятичный масштабный коэффициент из секции 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Тип данных из секции 1 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_b_d_s_aefc7ff8058b262946d3bd50f347202cc}\label{class_b_d_s_aefc7ff8058b262946d3bd50f347202cc}} 
+\index{BDS@{BDS}!uniData@{uniData}}
+\index{uniData@{uniData}!BDS@{BDS}}
+\doxysubsubsection{\texorpdfstring{uniData}{uniData}}
+{\footnotesize\ttfamily friend struct \mbox{\hyperlink{structuni_data}{uni\+Data}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{bds_8h}{bds.\+h}}\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{bds_8cpp}{bds.\+cpp}}\end{DoxyCompactItemize}

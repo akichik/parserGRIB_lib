@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Исходный файл C:/Users/kicha/Documents/Qt/parser/bms.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('bms_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bms.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bms_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BMS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BMS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="reader_8h.html">reader.h</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_b_m_s.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_b_m_s.html">BMS</a>:<span class="keyword">public</span> <a class="code" href="class_reader.html">Reader</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_b_m_s_1_1_data.html">   25</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_b_m_s_1_1_data.html">Data</a>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_b_m_s_1_1_data.html#a33ca108aa47b7b72278723c26b9c28ec">   26</a></span>&#160;        QList&lt;bool&gt; <a class="code" href="struct_b_m_s_1_1_data.html#a33ca108aa47b7b72278723c26b9c28ec">bitMap</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_b_m_s_1_1_data.html#aa307489c54ea41a0e975585f740221b8">   27</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="struct_b_m_s_1_1_data.html#aa307489c54ea41a0e975585f740221b8">sectionLength</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_b_m_s_1_1_data.html#a047d18ae2f46075012446e94a42d8948">   28</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_b_m_s_1_1_data.html#a047d18ae2f46075012446e94a42d8948">unusedBit</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_b_m_s_1_1_data.html#aae4a75a940a55cc797d46d061f4b7592">   29</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_b_m_s_1_1_data.html#aae4a75a940a55cc797d46d061f4b7592">specificBitmap</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_b_m_s.html#aefc7ff8058b262946d3bd50f347202cc">   32</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structuni_data.html">uniData</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_b_m_s.html#a763b5a616fd2231bf94edb4cc056a2c2">   33</a></span>&#160;    <a class="code" href="class_b_m_s.html#a763b5a616fd2231bf94edb4cc056a2c2">BMS</a>(){};</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_b_m_s.html#a27d4f84f799a1a4bc2e0cd004b00f077">   34</a></span>&#160;    <a class="code" href="class_b_m_s.html#a27d4f84f799a1a4bc2e0cd004b00f077">~BMS</a>(){};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_m_s.html#ab0c820c83402d9a0e6d489825689d760">readSec</a>(ifstream *file, Data* d, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_b_m_s.html#a4a053d66ebc9310f384834f028ab514e">   45</a></span>&#160;    QList&lt;bool&gt; <a class="code" href="class_b_m_s.html#a4a053d66ebc9310f384834f028ab514e">getBitMap</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // BMS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_b_m_s_1_1_data_html_a33ca108aa47b7b72278723c26b9c28ec"><div class="ttname"><a href="struct_b_m_s_1_1_data.html#a33ca108aa47b7b72278723c26b9c28ec">BMS::Data::bitMap</a></div><div class="ttdeci">QList&lt; bool &gt; bitMap</div><div class="ttdoc">Битовое отображения</div><div class="ttdef"><b>Definition:</b> bms.h:26</div></div>
+<div class="ttc" id="astructuni_data_html"><div class="ttname"><a href="structuni_data.html">uniData</a></div><div class="ttdef"><b>Definition:</b> parser.h:14</div></div>
+<div class="ttc" id="aclass_b_m_s_html"><div class="ttname"><a href="class_b_m_s.html">BMS</a></div><div class="ttdoc">Раздел 3. Раздел битового отображения.</div><div class="ttdef"><b>Definition:</b> bms.h:20</div></div>
+<div class="ttc" id="aclass_b_m_s_html_a763b5a616fd2231bf94edb4cc056a2c2"><div class="ttname"><a href="class_b_m_s.html#a763b5a616fd2231bf94edb4cc056a2c2">BMS::BMS</a></div><div class="ttdeci">BMS()</div><div class="ttdef"><b>Definition:</b> bms.h:33</div></div>
+<div class="ttc" id="areader_8h_html"><div class="ttname"><a href="reader_8h.html">reader.h</a></div></div>
+<div class="ttc" id="aclass_reader_html"><div class="ttname"><a href="class_reader.html">Reader</a></div><div class="ttdef"><b>Definition:</b> reader.h:12</div></div>
+<div class="ttc" id="aclass_b_m_s_html_a27d4f84f799a1a4bc2e0cd004b00f077"><div class="ttname"><a href="class_b_m_s.html#a27d4f84f799a1a4bc2e0cd004b00f077">BMS::~BMS</a></div><div class="ttdeci">~BMS()</div><div class="ttdef"><b>Definition:</b> bms.h:34</div></div>
+<div class="ttc" id="astruct_b_m_s_1_1_data_html_aa307489c54ea41a0e975585f740221b8"><div class="ttname"><a href="struct_b_m_s_1_1_data.html#aa307489c54ea41a0e975585f740221b8">BMS::Data::sectionLength</a></div><div class="ttdeci">long sectionLength</div><div class="ttdoc">Длина раздела</div><div class="ttdef"><b>Definition:</b> bms.h:27</div></div>
+<div class="ttc" id="aclass_b_m_s_html_ab0c820c83402d9a0e6d489825689d760"><div class="ttname"><a href="class_b_m_s.html#ab0c820c83402d9a0e6d489825689d760">BMS::readSec</a></div><div class="ttdeci">void readSec(ifstream *file, Data *d, int)</div><div class="ttdef"><b>Definition:</b> bms.cpp:3</div></div>
+<div class="ttc" id="aclass_b_m_s_html_a4a053d66ebc9310f384834f028ab514e"><div class="ttname"><a href="class_b_m_s.html#a4a053d66ebc9310f384834f028ab514e">BMS::getBitMap</a></div><div class="ttdeci">QList&lt; bool &gt; getBitMap()</div></div>
+<div class="ttc" id="astruct_b_m_s_1_1_data_html_a047d18ae2f46075012446e94a42d8948"><div class="ttname"><a href="struct_b_m_s_1_1_data.html#a047d18ae2f46075012446e94a42d8948">BMS::Data::unusedBit</a></div><div class="ttdeci">int unusedBit</div><div class="ttdoc">Количество неиспользуемых битов в конце раздела</div><div class="ttdef"><b>Definition:</b> bms.h:28</div></div>
+<div class="ttc" id="astruct_b_m_s_1_1_data_html_aae4a75a940a55cc797d46d061f4b7592"><div class="ttname"><a href="struct_b_m_s_1_1_data.html#aae4a75a940a55cc797d46d061f4b7592">BMS::Data::specificBitmap</a></div><div class="ttdeci">bool specificBitmap</div><div class="ttdoc">Является ли битовое отображение предопределенным</div><div class="ttdef"><b>Definition:</b> bms.h:29</div></div>
+<div class="ttc" id="astruct_b_m_s_1_1_data_html"><div class="ttname"><a href="struct_b_m_s_1_1_data.html">BMS::Data</a></div><div class="ttdoc">Структура данных, описывающая содержание раздела битового отображения</div><div class="ttdef"><b>Definition:</b> bms.h:25</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ecc0daaf6d1858b41148c21ca78b7518.html">Qt</a></li><li class="navelem"><a class="el" href="dir_1b7303f86ddf0d01e1ddc826cd74b4a8.html">parser</a></li><li class="navelem"><a class="el" href="bms_8h.html">bms.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

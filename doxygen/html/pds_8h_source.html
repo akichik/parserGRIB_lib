@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Исходный файл C:/Users/kicha/Documents/Qt/parser/pds.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('pds_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pds.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pds_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PDS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PDS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="reader_8h.html">reader.h</a>&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tablessection1_8h.html">tablessection1.h</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define isleapyear(y) ((((y)%4==0) &amp;&amp; ((y)%100!=0))||((y)%400==0))</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="pds_8h.html#aedfd0491daa686aeac481f2b74ca177f">   14</a></span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_p_d_s.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_p_d_s.html">PDS</a> : <span class="keyword">public</span> <a class="code" href="class_reader.html">Reader</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html">   28</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_p_d_s_1_1_data.html">Data</a>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a8883634706a29dd398a366bc14d85387">   29</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="struct_p_d_s_1_1_data.html#a8883634706a29dd398a366bc14d85387">sectionLength</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#acb395bce70d398f8f950f6c9ec60282e">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#acb395bce70d398f8f950f6c9ec60282e">parameter_table_version_number</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a36dbb09bc459f405db7c51219f02f2de">   31</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="struct_p_d_s_1_1_data.html#a36dbb09bc459f405db7c51219f02f2de">identification_of_center</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ab4bfc8749a00140f029205096a1775c5">   32</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ab4bfc8749a00140f029205096a1775c5">generating_process_ID_number</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ae281f896774127cbafef3c333e8b4108">   33</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ae281f896774127cbafef3c333e8b4108">grid_identification</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a4bc769b204e5eacc615d84608bb3e3f4">   34</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_p_d_s_1_1_data.html#a4bc769b204e5eacc615d84608bb3e3f4">GDS</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ab0e261e768394ffb37e63a89f10ff68d">   35</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="struct_p_d_s_1_1_data.html#ab0e261e768394ffb37e63a89f10ff68d">BMS</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a4c42bafbe0dbd9da9cc7261f2a51ac7f">   36</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="struct_p_d_s_1_1_data.html#a4c42bafbe0dbd9da9cc7261f2a51ac7f">indicator_of_parameter_and_units</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ac87d2cb2f34ac98ef4ff960e2df4f6ce">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ac87d2cb2f34ac98ef4ff960e2df4f6ce">indicator_of_type_of_level_or_layer</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a1f03713e31d69b0883b492e137fe6c4f">   38</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#a1f03713e31d69b0883b492e137fe6c4f">info_of_the_level_or_layer</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#aace5b13b98467271cc4d3584a03ff44f">   39</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#aace5b13b98467271cc4d3584a03ff44f">year</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ab1af9e6c588aca3d421f7139b7e5a92a">   40</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ab1af9e6c588aca3d421f7139b7e5a92a">month</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#acc7fa349db97e5d61fb9b33ee97b9825">   41</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#acc7fa349db97e5d61fb9b33ee97b9825">day</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a86244ebb01b3e0fb4d357d09d8ca54fe">   42</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#a86244ebb01b3e0fb4d357d09d8ca54fe">hour</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a71ab8917eb8a0ad87471cb560de52a1f">   43</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#a71ab8917eb8a0ad87471cb560de52a1f">minut</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a36044bbfb284fb2250a973fa26a41d38">   44</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="struct_p_d_s_1_1_data.html#a36044bbfb284fb2250a973fa26a41d38">refDate</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a3d3d9a0da7897da352f8bbebdc4ac882">   45</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="struct_p_d_s_1_1_data.html#a3d3d9a0da7897da352f8bbebdc4ac882">curDate</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ab09211511e3467dd57b7138caa13e240">   46</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ab09211511e3467dd57b7138caa13e240">forecast_time_unit</a>; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a8631a37207d8a68fc89124d0d548c081">   47</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#a4e7efdbfd357564309b8b2bb479b6cc9">P1</a>,<a class="code" href="struct_p_d_s_1_1_data.html#a8631a37207d8a68fc89124d0d548c081">P2</a>; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ab64ae17c2b0435a27b3f1863c2c261ca">   48</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ab64ae17c2b0435a27b3f1863c2c261ca">time_range_indicator</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#aae419e3cd72eab60361bd4769460eb50">   49</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#aae419e3cd72eab60361bd4769460eb50">periodSec</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ac68a0f040cfb731bad82135758efafc6">   50</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ac68a0f040cfb731bad82135758efafc6">number_missing_from_averages_or_accumulations</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#abe89888a73d6470f518de83dfc07a5de">   51</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#abe89888a73d6470f518de83dfc07a5de">century</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#a3161567f137f9bae1dca5f93e2b42bbc">   52</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#a3161567f137f9bae1dca5f93e2b42bbc">identification_of_sub_center</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_p_d_s_1_1_data.html#ad745f51b7f24c8fc1e829dd3c10fdda7">   53</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_p_d_s_1_1_data.html#ad745f51b7f24c8fc1e829dd3c10fdda7">D</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_p_d_s.html#aefc7ff8058b262946d3bd50f347202cc">   56</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structuni_data.html">uniData</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_p_d_s.html#a10beece5cc673bfdc272cc7eef5464b7">   57</a></span>&#160;    <a class="code" href="class_p_d_s.html#a10beece5cc673bfdc272cc7eef5464b7">PDS</a>(){}</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_p_d_s.html#a763242a02d67b7958bdd7ee19282b42e">   58</a></span>&#160;    <a class="code" href="class_p_d_s.html#a763242a02d67b7958bdd7ee19282b42e">~PDS</a>(){}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_p_d_s.html#afb6e6b1acd170e55345e002baa6dded5">readSec</a>(ifstream* file, Data* d);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_p_d_s.html#a87b0e42191da4ccbbb4e90ef2cdaea91">UTC_mktime</a> (<span class="keywordtype">int</span> <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8">year</a>,<span class="keywordtype">int</span> <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286">month</a>,<span class="keywordtype">int</span> <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8">day</a>,<span class="keywordtype">int</span> <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3">hour</a>,<span class="keywordtype">int</span> min,<span class="keywordtype">int</span> sec);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_p_d_s.html#a4a45a5d285638b38dca9a863dd0be4d6">factorD</a>(<span class="keywordtype">int</span>*,<span class="keywordtype">char</span> a,<span class="keywordtype">char</span> b);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_p_d_s.html#a924c7c5a8546ac6df7f180e441285ff7">centerIndentification</a>(<span class="keywordtype">char</span> a);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_p_d_s.html#a3899a2091c8fa4b1212949df98b5d011">dataType</a>(<span class="keywordtype">char</span> a);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_p_d_s.html#ad4f73563380120a367848e9d739d10ba">period</a>(<span class="keywordtype">int</span> unit,<span class="keywordtype">int</span> P1,<span class="keywordtype">int</span> P2, <span class="keywordtype">int</span> range);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // PDS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_p_d_s_1_1_data_html"><div class="ttname"><a href="struct_p_d_s_1_1_data.html">PDS::Data</a></div><div class="ttdoc">Структура данных, описывающая содержание раздела определения продукции</div><div class="ttdef"><b>Definition:</b> pds.h:28</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a3161567f137f9bae1dca5f93e2b42bbc"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a3161567f137f9bae1dca5f93e2b42bbc">PDS::Data::identification_of_sub_center</a></div><div class="ttdeci">int identification_of_sub_center</div><div class="ttdoc">Указатель подцентра</div><div class="ttdef"><b>Definition:</b> pds.h:52</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286">TimeUnit::month</a></div><div class="ttdeci">@ month</div><div class="ttdoc">Месяц</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ac68a0f040cfb731bad82135758efafc6"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ac68a0f040cfb731bad82135758efafc6">PDS::Data::number_missing_from_averages_or_accumulations</a></div><div class="ttdeci">int number_missing_from_averages_or_accumulations</div><div class="ttdoc">Число утраченных случаев в расчете в случае статистической обработки</div><div class="ttdef"><b>Definition:</b> pds.h:50</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a8883634706a29dd398a366bc14d85387"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a8883634706a29dd398a366bc14d85387">PDS::Data::sectionLength</a></div><div class="ttdeci">long sectionLength</div><div class="ttdoc">Длина секции</div><div class="ttdef"><b>Definition:</b> pds.h:29</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ad745f51b7f24c8fc1e829dd3c10fdda7"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ad745f51b7f24c8fc1e829dd3c10fdda7">PDS::Data::D</a></div><div class="ttdeci">int D</div><div class="ttdoc">Десятичный масштабный коэффициент D.</div><div class="ttdef"><b>Definition:</b> pds.h:53</div></div>
+<div class="ttc" id="aclass_p_d_s_html_afb6e6b1acd170e55345e002baa6dded5"><div class="ttname"><a href="class_p_d_s.html#afb6e6b1acd170e55345e002baa6dded5">PDS::readSec</a></div><div class="ttdeci">void readSec(ifstream *file, Data *d)</div><div class="ttdef"><b>Definition:</b> pds.cpp:3</div></div>
+<div class="ttc" id="astructuni_data_html"><div class="ttname"><a href="structuni_data.html">uniData</a></div><div class="ttdef"><b>Definition:</b> parser.h:14</div></div>
+<div class="ttc" id="aclass_p_d_s_html"><div class="ttname"><a href="class_p_d_s.html">PDS</a></div><div class="ttdoc">Раздел 1. Раздел определения продукции.</div><div class="ttdef"><b>Definition:</b> pds.h:23</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_acc7fa349db97e5d61fb9b33ee97b9825"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#acc7fa349db97e5d61fb9b33ee97b9825">PDS::Data::day</a></div><div class="ttdeci">int day</div><div class="ttdoc">День</div><div class="ttdef"><b>Definition:</b> pds.h:41</div></div>
+<div class="ttc" id="atablessection1_8h_html"><div class="ttname"><a href="tablessection1_8h.html">tablessection1.h</a></div><div class="ttdoc">Файл, описывающий кодовые таблицы раздела 1.</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ab0e261e768394ffb37e63a89f10ff68d"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ab0e261e768394ffb37e63a89f10ff68d">PDS::Data::BMS</a></div><div class="ttdeci">bool BMS</div><div class="ttdoc">Флаг наличия BMS(true-included,else omitted)</div><div class="ttdef"><b>Definition:</b> pds.h:35</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a1f03713e31d69b0883b492e137fe6c4f"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a1f03713e31d69b0883b492e137fe6c4f">PDS::Data::info_of_the_level_or_layer</a></div><div class="ttdeci">int info_of_the_level_or_layer</div><div class="ttdoc">Высота, давление и т. д. уровня или слоя</div><div class="ttdef"><b>Definition:</b> pds.h:38</div></div>
+<div class="ttc" id="aclass_p_d_s_html_a924c7c5a8546ac6df7f180e441285ff7"><div class="ttname"><a href="class_p_d_s.html#a924c7c5a8546ac6df7f180e441285ff7">PDS::centerIndentification</a></div><div class="ttdeci">string centerIndentification(char a)</div><div class="ttdef"><b>Definition:</b> pds.cpp:113</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_aae419e3cd72eab60361bd4769460eb50"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#aae419e3cd72eab60361bd4769460eb50">PDS::Data::periodSec</a></div><div class="ttdeci">int periodSec</div><div class="ttdoc">Период в секундах</div><div class="ttdef"><b>Definition:</b> pds.h:49</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3">TimeUnit::hour</a></div><div class="ttdeci">@ hour</div><div class="ttdoc">Час</div></div>
+<div class="ttc" id="aclass_p_d_s_html_a10beece5cc673bfdc272cc7eef5464b7"><div class="ttname"><a href="class_p_d_s.html#a10beece5cc673bfdc272cc7eef5464b7">PDS::PDS</a></div><div class="ttdeci">PDS()</div><div class="ttdef"><b>Definition:</b> pds.h:57</div></div>
+<div class="ttc" id="aclass_p_d_s_html_a763242a02d67b7958bdd7ee19282b42e"><div class="ttname"><a href="class_p_d_s.html#a763242a02d67b7958bdd7ee19282b42e">PDS::~PDS</a></div><div class="ttdeci">~PDS()</div><div class="ttdef"><b>Definition:</b> pds.h:58</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a86244ebb01b3e0fb4d357d09d8ca54fe"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a86244ebb01b3e0fb4d357d09d8ca54fe">PDS::Data::hour</a></div><div class="ttdeci">int hour</div><div class="ttdoc">Час</div><div class="ttdef"><b>Definition:</b> pds.h:42</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ac87d2cb2f34ac98ef4ff960e2df4f6ce"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ac87d2cb2f34ac98ef4ff960e2df4f6ce">PDS::Data::indicator_of_type_of_level_or_layer</a></div><div class="ttdeci">int indicator_of_type_of_level_or_layer</div><div class="ttdoc">Индикатор типа уровня или слоя</div><div class="ttdef"><b>Definition:</b> pds.h:37</div></div>
+<div class="ttc" id="areader_8h_html"><div class="ttname"><a href="reader_8h.html">reader.h</a></div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a71ab8917eb8a0ad87471cb560de52a1f"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a71ab8917eb8a0ad87471cb560de52a1f">PDS::Data::minut</a></div><div class="ttdeci">int minut</div><div class="ttdoc">Минута</div><div class="ttdef"><b>Definition:</b> pds.h:43</div></div>
+<div class="ttc" id="aclass_p_d_s_html_a4a45a5d285638b38dca9a863dd0be4d6"><div class="ttname"><a href="class_p_d_s.html#a4a45a5d285638b38dca9a863dd0be4d6">PDS::factorD</a></div><div class="ttdeci">void factorD(int *, char a, char b)</div><div class="ttdef"><b>Definition:</b> pds.cpp:103</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a3d3d9a0da7897da352f8bbebdc4ac882"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a3d3d9a0da7897da352f8bbebdc4ac882">PDS::Data::curDate</a></div><div class="ttdeci">long long curDate</div><div class="ttdef"><b>Definition:</b> pds.h:45</div></div>
+<div class="ttc" id="aclass_reader_html"><div class="ttname"><a href="class_reader.html">Reader</a></div><div class="ttdef"><b>Definition:</b> reader.h:12</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ae281f896774127cbafef3c333e8b4108"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ae281f896774127cbafef3c333e8b4108">PDS::Data::grid_identification</a></div><div class="ttdeci">int grid_identification</div><div class="ttdoc">Идентификация сетки (географическое положение и площадь)</div><div class="ttdef"><b>Definition:</b> pds.h:33</div></div>
+<div class="ttc" id="aclass_p_d_s_html_ad4f73563380120a367848e9d739d10ba"><div class="ttname"><a href="class_p_d_s.html#ad4f73563380120a367848e9d739d10ba">PDS::period</a></div><div class="ttdeci">int period(int unit, int P1, int P2, int range)</div><div class="ttdef"><b>Definition:</b> pds.cpp:199</div></div>
+<div class="ttc" id="aclass_p_d_s_html_a3899a2091c8fa4b1212949df98b5d011"><div class="ttname"><a href="class_p_d_s.html#a3899a2091c8fa4b1212949df98b5d011">PDS::dataType</a></div><div class="ttdeci">string dataType(char a)</div><div class="ttdef"><b>Definition:</b> pds.cpp:165</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_abe89888a73d6470f518de83dfc07a5de"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#abe89888a73d6470f518de83dfc07a5de">PDS::Data::century</a></div><div class="ttdeci">int century</div><div class="ttdoc">Век</div><div class="ttdef"><b>Definition:</b> pds.h:51</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_acb395bce70d398f8f950f6c9ec60282e"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#acb395bce70d398f8f950f6c9ec60282e">PDS::Data::parameter_table_version_number</a></div><div class="ttdeci">int parameter_table_version_number</div><div class="ttdoc">Номер версии основных таблиц GRIB.</div><div class="ttdef"><b>Definition:</b> pds.h:30</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_aace5b13b98467271cc4d3584a03ff44f"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#aace5b13b98467271cc4d3584a03ff44f">PDS::Data::year</a></div><div class="ttdeci">int year</div><div class="ttdoc">Год</div><div class="ttdef"><b>Definition:</b> pds.h:39</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a4c42bafbe0dbd9da9cc7261f2a51ac7f"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a4c42bafbe0dbd9da9cc7261f2a51ac7f">PDS::Data::indicator_of_parameter_and_units</a></div><div class="ttdeci">string indicator_of_parameter_and_units</div><div class="ttdoc">Индикатор параметра и единиц измерения</div><div class="ttdef"><b>Definition:</b> pds.h:36</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ab1af9e6c588aca3d421f7139b7e5a92a"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ab1af9e6c588aca3d421f7139b7e5a92a">PDS::Data::month</a></div><div class="ttdeci">int month</div><div class="ttdoc">Месяц</div><div class="ttdef"><b>Definition:</b> pds.h:40</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8">TimeUnit::day</a></div><div class="ttdeci">@ day</div><div class="ttdoc">День</div></div>
+<div class="ttc" id="aclass_p_d_s_html_a87b0e42191da4ccbbb4e90ef2cdaea91"><div class="ttname"><a href="class_p_d_s.html#a87b0e42191da4ccbbb4e90ef2cdaea91">PDS::UTC_mktime</a></div><div class="ttdeci">long long UTC_mktime(int year, int month, int day, int hour, int min, int sec)</div><div class="ttdef"><b>Definition:</b> pds.cpp:69</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a8631a37207d8a68fc89124d0d548c081"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a8631a37207d8a68fc89124d0d548c081">PDS::Data::P2</a></div><div class="ttdeci">int P2</div><div class="ttdoc">Периоды времени</div><div class="ttdef"><b>Definition:</b> pds.h:47</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8">TimeUnit::year</a></div><div class="ttdeci">@ year</div><div class="ttdoc">Год</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ab09211511e3467dd57b7138caa13e240"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ab09211511e3467dd57b7138caa13e240">PDS::Data::forecast_time_unit</a></div><div class="ttdeci">int forecast_time_unit</div><div class="ttdoc">Единица времени прогноза tablessection1.h TimeUnit.</div><div class="ttdef"><b>Definition:</b> pds.h:46</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a4bc769b204e5eacc615d84608bb3e3f4"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a4bc769b204e5eacc615d84608bb3e3f4">PDS::Data::GDS</a></div><div class="ttdeci">bool GDS</div><div class="ttdoc">Флаг наличия GDS(true-included,else omitted)</div><div class="ttdef"><b>Definition:</b> pds.h:34</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ab64ae17c2b0435a27b3f1863c2c261ca"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ab64ae17c2b0435a27b3f1863c2c261ca">PDS::Data::time_range_indicator</a></div><div class="ttdeci">int time_range_indicator</div><div class="ttdoc">Указатель времени</div><div class="ttdef"><b>Definition:</b> pds.h:48</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a36044bbfb284fb2250a973fa26a41d38"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a36044bbfb284fb2250a973fa26a41d38">PDS::Data::refDate</a></div><div class="ttdeci">long long refDate</div><div class="ttdef"><b>Definition:</b> pds.h:44</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a4e7efdbfd357564309b8b2bb479b6cc9"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a4e7efdbfd357564309b8b2bb479b6cc9">PDS::Data::P1</a></div><div class="ttdeci">int P1</div><div class="ttdef"><b>Definition:</b> pds.h:47</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_a36dbb09bc459f405db7c51219f02f2de"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#a36dbb09bc459f405db7c51219f02f2de">PDS::Data::identification_of_center</a></div><div class="ttdeci">string identification_of_center</div><div class="ttdoc">Идентификатор центрального производителя</div><div class="ttdef"><b>Definition:</b> pds.h:31</div></div>
+<div class="ttc" id="astruct_p_d_s_1_1_data_html_ab4bfc8749a00140f029205096a1775c5"><div class="ttname"><a href="struct_p_d_s_1_1_data.html#ab4bfc8749a00140f029205096a1775c5">PDS::Data::generating_process_ID_number</a></div><div class="ttdeci">int generating_process_ID_number</div><div class="ttdoc">Цифровой ID процесса генерации</div><div class="ttdef"><b>Definition:</b> pds.h:32</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ecc0daaf6d1858b41148c21ca78b7518.html">Qt</a></li><li class="navelem"><a class="el" href="dir_1b7303f86ddf0d01e1ddc826cd74b4a8.html">parser</a></li><li class="navelem"><a class="el" href="pds_8h.html">pds.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

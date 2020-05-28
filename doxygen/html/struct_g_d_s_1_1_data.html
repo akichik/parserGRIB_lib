@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Структура GDS::Data</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct_g_d_s_1_1_data.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_g_d_s_1_1_data-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура GDS::Data</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура данных, описывающая содержание раздела описания сетки  
+ <a href="struct_g_d_s_1_1_data.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="gds_8h_source.html">gds.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a4274f10d05e695d6e286ad7f09d43ec5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a4274f10d05e695d6e286ad7f09d43ec5">sectionLength</a></td></tr>
+<tr class="memdesc:a4274f10d05e695d6e286ad7f09d43ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Длина раздела  <a href="struct_g_d_s_1_1_data.html#a4274f10d05e695d6e286ad7f09d43ec5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4274f10d05e695d6e286ad7f09d43ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0c81b1e6905781f5427a232002ad1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a4b0c81b1e6905781f5427a232002ad1f">NV</a></td></tr>
+<tr class="memdesc:a4b0c81b1e6905781f5427a232002ad1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество параметров вертикальной координаты  <a href="struct_g_d_s_1_1_data.html#a4b0c81b1e6905781f5427a232002ad1f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4b0c81b1e6905781f5427a232002ad1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2861f66b1a4a9831b1128f67d930a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#aaf2861f66b1a4a9831b1128f67d930a4">PV_LV</a></td></tr>
+<tr class="memdesc:aaf2861f66b1a4a9831b1128f67d930a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер октета перечня параметров верткальной координат  <a href="struct_g_d_s_1_1_data.html#aaf2861f66b1a4a9831b1128f67d930a4">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaf2861f66b1a4a9831b1128f67d930a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac858105e2bd8da0d3e38e744293454c0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#ac858105e2bd8da0d3e38e744293454c0">DataType</a></td></tr>
+<tr class="memdesc:ac858105e2bd8da0d3e38e744293454c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип представления данных  <a href="struct_g_d_s_1_1_data.html#ac858105e2bd8da0d3e38e744293454c0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac858105e2bd8da0d3e38e744293454c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006a3c5960d8a5fcd560ea0b15712199"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a006a3c5960d8a5fcd560ea0b15712199">Ni</a></td></tr>
+<tr class="memdesc:a006a3c5960d8a5fcd560ea0b15712199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество точек вдоль параллель  <a href="struct_g_d_s_1_1_data.html#a006a3c5960d8a5fcd560ea0b15712199">Подробнее...</a><br /></td></tr>
+<tr class="separator:a006a3c5960d8a5fcd560ea0b15712199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976a16e1e17747521c5d5baa36d13506"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a976a16e1e17747521c5d5baa36d13506">Nj</a></td></tr>
+<tr class="memdesc:a976a16e1e17747521c5d5baa36d13506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество тчоек вдоль меридиана  <a href="struct_g_d_s_1_1_data.html#a976a16e1e17747521c5d5baa36d13506">Подробнее...</a><br /></td></tr>
+<tr class="separator:a976a16e1e17747521c5d5baa36d13506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6c2c2134bcc4fca9452846e70e2741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a2f6c2c2134bcc4fca9452846e70e2741">pointQuantity</a></td></tr>
+<tr class="memdesc:a2f6c2c2134bcc4fca9452846e70e2741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общее количество точек  <a href="struct_g_d_s_1_1_data.html#a2f6c2c2134bcc4fca9452846e70e2741">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2f6c2c2134bcc4fca9452846e70e2741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0776cba61b809e347a4bbecd7a8bec3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a0776cba61b809e347a4bbecd7a8bec3d">La1</a></td></tr>
+<tr class="memdesc:a0776cba61b809e347a4bbecd7a8bec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Широта первой точки сетки  <a href="struct_g_d_s_1_1_data.html#a0776cba61b809e347a4bbecd7a8bec3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0776cba61b809e347a4bbecd7a8bec3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da75f678abbfd79f7c962bb52b35f6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a5da75f678abbfd79f7c962bb52b35f6e">southLa1</a></td></tr>
+<tr class="separator:a5da75f678abbfd79f7c962bb52b35f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7dde0933873d1eb75eedc9f954fbe26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#ad7dde0933873d1eb75eedc9f954fbe26">Lo1</a></td></tr>
+<tr class="memdesc:ad7dde0933873d1eb75eedc9f954fbe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Долгота первой точки сетки  <a href="struct_g_d_s_1_1_data.html#ad7dde0933873d1eb75eedc9f954fbe26">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7dde0933873d1eb75eedc9f954fbe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658063217f535631f9cadaa4f6bdf737"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a658063217f535631f9cadaa4f6bdf737">westLo1</a></td></tr>
+<tr class="separator:a658063217f535631f9cadaa4f6bdf737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09cae361e7d95d7b98fcc881feade78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#aa09cae361e7d95d7b98fcc881feade78">flags</a></td></tr>
+<tr class="memdesc:aa09cae361e7d95d7b98fcc881feade78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг разрешения и компонентов  <a href="struct_g_d_s_1_1_data.html#aa09cae361e7d95d7b98fcc881feade78">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa09cae361e7d95d7b98fcc881feade78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edad6bfbbecfdcc6191b49a08934c09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a0edad6bfbbecfdcc6191b49a08934c09">La2</a></td></tr>
+<tr class="memdesc:a0edad6bfbbecfdcc6191b49a08934c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Широта последней точки сетки  <a href="struct_g_d_s_1_1_data.html#a0edad6bfbbecfdcc6191b49a08934c09">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0edad6bfbbecfdcc6191b49a08934c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024e52cb5fdfd86e172b35f54d46b28a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a024e52cb5fdfd86e172b35f54d46b28a">southLa2</a></td></tr>
+<tr class="separator:a024e52cb5fdfd86e172b35f54d46b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835dfac8bfd7a447ec390a4506ebed68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a835dfac8bfd7a447ec390a4506ebed68">Lo2</a></td></tr>
+<tr class="memdesc:a835dfac8bfd7a447ec390a4506ebed68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Долгота последней точки сетки  <a href="struct_g_d_s_1_1_data.html#a835dfac8bfd7a447ec390a4506ebed68">Подробнее...</a><br /></td></tr>
+<tr class="separator:a835dfac8bfd7a447ec390a4506ebed68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dc86e9929a7e53bfc2922a267b75d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#ac3dc86e9929a7e53bfc2922a267b75d0">westLo2</a></td></tr>
+<tr class="separator:ac3dc86e9929a7e53bfc2922a267b75d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7707c258494d7c834ffe29bf93bb810"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#ab7707c258494d7c834ffe29bf93bb810">Di</a></td></tr>
+<tr class="memdesc:ab7707c258494d7c834ffe29bf93bb810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приращение в направлении i.  <a href="struct_g_d_s_1_1_data.html#ab7707c258494d7c834ffe29bf93bb810">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab7707c258494d7c834ffe29bf93bb810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d04194e86000f625268f46d0b3db06e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a6d04194e86000f625268f46d0b3db06e">Dj_N</a></td></tr>
+<tr class="memdesc:a6d04194e86000f625268f46d0b3db06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приращение в направлении j.  <a href="struct_g_d_s_1_1_data.html#a6d04194e86000f625268f46d0b3db06e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6d04194e86000f625268f46d0b3db06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24781e6a9806a5301884101ad613422c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_d_s_1_1_data.html#a24781e6a9806a5301884101ad613422c">scanFlags</a></td></tr>
+<tr class="memdesc:a24781e6a9806a5301884101ad613422c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим сканирования  <a href="struct_g_d_s_1_1_data.html#a24781e6a9806a5301884101ad613422c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a24781e6a9806a5301884101ad613422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура данных, описывающая содержание раздела описания сетки </p>
+</div><h2 class="groupheader">Данные класса</h2>
+<a id="ac858105e2bd8da0d3e38e744293454c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac858105e2bd8da0d3e38e744293454c0">&#9670;&nbsp;</a></span>DataType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GDS::Data::DataType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип представления данных </p>
+
+</div>
+</div>
+<a id="ab7707c258494d7c834ffe29bf93bb810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7707c258494d7c834ffe29bf93bb810">&#9670;&nbsp;</a></span>Di</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::Di</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Приращение в направлении i. </p>
+
+</div>
+</div>
+<a id="a6d04194e86000f625268f46d0b3db06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d04194e86000f625268f46d0b3db06e">&#9670;&nbsp;</a></span>Dj_N</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::Dj_N</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Приращение в направлении j. </p>
+
+</div>
+</div>
+<a id="aa09cae361e7d95d7b98fcc881feade78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa09cae361e7d95d7b98fcc881feade78">&#9670;&nbsp;</a></span>flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг разрешения и компонентов </p>
+
+</div>
+</div>
+<a id="a0776cba61b809e347a4bbecd7a8bec3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0776cba61b809e347a4bbecd7a8bec3d">&#9670;&nbsp;</a></span>La1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::La1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Широта первой точки сетки </p>
+
+</div>
+</div>
+<a id="a0edad6bfbbecfdcc6191b49a08934c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edad6bfbbecfdcc6191b49a08934c09">&#9670;&nbsp;</a></span>La2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::La2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Широта последней точки сетки </p>
+
+</div>
+</div>
+<a id="ad7dde0933873d1eb75eedc9f954fbe26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7dde0933873d1eb75eedc9f954fbe26">&#9670;&nbsp;</a></span>Lo1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::Lo1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Долгота первой точки сетки </p>
+
+</div>
+</div>
+<a id="a835dfac8bfd7a447ec390a4506ebed68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835dfac8bfd7a447ec390a4506ebed68">&#9670;&nbsp;</a></span>Lo2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::Lo2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Долгота последней точки сетки </p>
+
+</div>
+</div>
+<a id="a006a3c5960d8a5fcd560ea0b15712199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006a3c5960d8a5fcd560ea0b15712199">&#9670;&nbsp;</a></span>Ni</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::Ni</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество точек вдоль параллель </p>
+
+</div>
+</div>
+<a id="a976a16e1e17747521c5d5baa36d13506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976a16e1e17747521c5d5baa36d13506">&#9670;&nbsp;</a></span>Nj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::Nj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество тчоек вдоль меридиана </p>
+
+</div>
+</div>
+<a id="a4b0c81b1e6905781f5427a232002ad1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0c81b1e6905781f5427a232002ad1f">&#9670;&nbsp;</a></span>NV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::NV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество параметров вертикальной координаты </p>
+
+</div>
+</div>
+<a id="a2f6c2c2134bcc4fca9452846e70e2741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6c2c2134bcc4fca9452846e70e2741">&#9670;&nbsp;</a></span>pointQuantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::pointQuantity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Общее количество точек </p>
+
+</div>
+</div>
+<a id="aaf2861f66b1a4a9831b1128f67d930a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2861f66b1a4a9831b1128f67d930a4">&#9670;&nbsp;</a></span>PV_LV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::PV_LV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Номер октета перечня параметров верткальной координат </p>
+
+</div>
+</div>
+<a id="a24781e6a9806a5301884101ad613422c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24781e6a9806a5301884101ad613422c">&#9670;&nbsp;</a></span>scanFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GDS::Data::scanFlags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Режим сканирования </p>
+
+</div>
+</div>
+<a id="a4274f10d05e695d6e286ad7f09d43ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4274f10d05e695d6e286ad7f09d43ec5">&#9670;&nbsp;</a></span>sectionLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long GDS::Data::sectionLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Длина раздела </p>
+
+</div>
+</div>
+<a id="a5da75f678abbfd79f7c962bb52b35f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da75f678abbfd79f7c962bb52b35f6e">&#9670;&nbsp;</a></span>southLa1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GDS::Data::southLa1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a024e52cb5fdfd86e172b35f54d46b28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a024e52cb5fdfd86e172b35f54d46b28a">&#9670;&nbsp;</a></span>southLa2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GDS::Data::southLa2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a658063217f535631f9cadaa4f6bdf737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658063217f535631f9cadaa4f6bdf737">&#9670;&nbsp;</a></span>westLo1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GDS::Data::westLo1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3dc86e9929a7e53bfc2922a267b75d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3dc86e9929a7e53bfc2922a267b75d0">&#9670;&nbsp;</a></span>westLo2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GDS::Data::westLo2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>C:/Users/kicha/Documents/Qt/parser/<a class="el" href="gds_8h_source.html">gds.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_g_d_s.html">GDS</a></li><li class="navelem"><a class="el" href="struct_g_d_s_1_1_data.html">Data</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

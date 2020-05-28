@@ -1,0 +1,145 @@
+\hypertarget{struct_b_d_s_1_1_data}{}\doxysection{Структура B\+DS\+::Data}
+\label{struct_b_d_s_1_1_data}\index{BDS::Data@{BDS::Data}}
+
+
+Структура данных, описывающая содержание раздела двоичных данных  
+
+
+
+
+{\ttfamily \#include $<$bds.\+h$>$}
+
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{struct_b_d_s_1_1_data_aba1c8a6251af8436944f1fe6bc09b442}{section\+Length}}
+\begin{DoxyCompactList}\small\item\em Длина раздела \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_b_d_s_1_1_data_a6b8544f46e3729876039a09cf9f31032}{flag}}
+\begin{DoxyCompactList}\small\item\em Флаг, количество неиспользуемых бит в конце раздела \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_b_d_s_1_1_data_abb7a6775ee7ffe860faa39c967dd2ce2}{simple\+Pack}}
+\begin{DoxyCompactList}\small\item\em Простая упаковка \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_b_d_s_1_1_data_a0d037ac6d799a37f4cb9a6448727dfdb}{f\+Point}}
+\begin{DoxyCompactList}\small\item\em Представленные величины с плавающей запятой (в первоначальных данных) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_b_d_s_1_1_data_ab86c45dda08ed43d2eafe878b896be08}{map\+Point}}
+\begin{DoxyCompactList}\small\item\em Данные по точкам сетки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_b_d_s_1_1_data_a26a8a74f0fdc630bbfd04a127cb82f67}{addflag}}
+\begin{DoxyCompactList}\small\item\em Нет дополнительных флагов \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_b_d_s_1_1_data_aae5ee96fa53f03ae110ee67b19786929}{E}}
+\begin{DoxyCompactList}\small\item\em Масштабный коэффициент \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_b_d_s_1_1_data_a56b41613d5bc64360cc37c12ce5c77fb}{ref\+Value}}
+\begin{DoxyCompactList}\small\item\em Величина начала отсчета(минимум пакетных величинх \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{struct_b_d_s_1_1_data_ae5c6718ea7ae1734ab2a295940615f78}{bit}}
+\begin{DoxyCompactList}\small\item\em Количество битов, содержащих каждую пакетную величину \end{DoxyCompactList}\item 
+Q\+List$<$ float $>$ \mbox{\hyperlink{struct_b_d_s_1_1_data_a8b74be6ae8a494a397b94e3146045ae4}{point\+Data}}
+\begin{DoxyCompactList}\small\item\em Данные \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Структура данных, описывающая содержание раздела двоичных данных 
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_a26a8a74f0fdc630bbfd04a127cb82f67}\label{struct_b_d_s_1_1_data_a26a8a74f0fdc630bbfd04a127cb82f67}} 
+\index{BDS::Data@{BDS::Data}!addflag@{addflag}}
+\index{addflag@{addflag}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{addflag}{addflag}}
+{\footnotesize\ttfamily bool B\+D\+S\+::\+Data\+::addflag}
+
+
+
+Нет дополнительных флагов 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_ae5c6718ea7ae1734ab2a295940615f78}\label{struct_b_d_s_1_1_data_ae5c6718ea7ae1734ab2a295940615f78}} 
+\index{BDS::Data@{BDS::Data}!bit@{bit}}
+\index{bit@{bit}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{bit}{bit}}
+{\footnotesize\ttfamily size\+\_\+t B\+D\+S\+::\+Data\+::bit}
+
+
+
+Количество битов, содержащих каждую пакетную величину 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_aae5ee96fa53f03ae110ee67b19786929}\label{struct_b_d_s_1_1_data_aae5ee96fa53f03ae110ee67b19786929}} 
+\index{BDS::Data@{BDS::Data}!E@{E}}
+\index{E@{E}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily int B\+D\+S\+::\+Data\+::E}
+
+
+
+Масштабный коэффициент 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_a6b8544f46e3729876039a09cf9f31032}\label{struct_b_d_s_1_1_data_a6b8544f46e3729876039a09cf9f31032}} 
+\index{BDS::Data@{BDS::Data}!flag@{flag}}
+\index{flag@{flag}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily int B\+D\+S\+::\+Data\+::flag}
+
+
+
+Флаг, количество неиспользуемых бит в конце раздела 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_a0d037ac6d799a37f4cb9a6448727dfdb}\label{struct_b_d_s_1_1_data_a0d037ac6d799a37f4cb9a6448727dfdb}} 
+\index{BDS::Data@{BDS::Data}!fPoint@{fPoint}}
+\index{fPoint@{fPoint}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{fPoint}{fPoint}}
+{\footnotesize\ttfamily bool B\+D\+S\+::\+Data\+::f\+Point}
+
+
+
+Представленные величины с плавающей запятой (в первоначальных данных) 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_ab86c45dda08ed43d2eafe878b896be08}\label{struct_b_d_s_1_1_data_ab86c45dda08ed43d2eafe878b896be08}} 
+\index{BDS::Data@{BDS::Data}!mapPoint@{mapPoint}}
+\index{mapPoint@{mapPoint}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{mapPoint}{mapPoint}}
+{\footnotesize\ttfamily bool B\+D\+S\+::\+Data\+::map\+Point}
+
+
+
+Данные по точкам сетки 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_a8b74be6ae8a494a397b94e3146045ae4}\label{struct_b_d_s_1_1_data_a8b74be6ae8a494a397b94e3146045ae4}} 
+\index{BDS::Data@{BDS::Data}!pointData@{pointData}}
+\index{pointData@{pointData}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{pointData}{pointData}}
+{\footnotesize\ttfamily Q\+List$<$float$>$ B\+D\+S\+::\+Data\+::point\+Data}
+
+
+
+Данные 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_a56b41613d5bc64360cc37c12ce5c77fb}\label{struct_b_d_s_1_1_data_a56b41613d5bc64360cc37c12ce5c77fb}} 
+\index{BDS::Data@{BDS::Data}!refValue@{refValue}}
+\index{refValue@{refValue}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{refValue}{refValue}}
+{\footnotesize\ttfamily float B\+D\+S\+::\+Data\+::ref\+Value}
+
+
+
+Величина начала отсчета(минимум пакетных величинх 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_aba1c8a6251af8436944f1fe6bc09b442}\label{struct_b_d_s_1_1_data_aba1c8a6251af8436944f1fe6bc09b442}} 
+\index{BDS::Data@{BDS::Data}!sectionLength@{sectionLength}}
+\index{sectionLength@{sectionLength}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{sectionLength}{sectionLength}}
+{\footnotesize\ttfamily long B\+D\+S\+::\+Data\+::section\+Length}
+
+
+
+Длина раздела 
+
+\mbox{\Hypertarget{struct_b_d_s_1_1_data_abb7a6775ee7ffe860faa39c967dd2ce2}\label{struct_b_d_s_1_1_data_abb7a6775ee7ffe860faa39c967dd2ce2}} 
+\index{BDS::Data@{BDS::Data}!simplePack@{simplePack}}
+\index{simplePack@{simplePack}!BDS::Data@{BDS::Data}}
+\doxysubsubsection{\texorpdfstring{simplePack}{simplePack}}
+{\footnotesize\ttfamily bool B\+D\+S\+::\+Data\+::simple\+Pack}
+
+
+
+Простая упаковка 
+
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{bds_8h}{bds.\+h}}\end{DoxyCompactItemize}

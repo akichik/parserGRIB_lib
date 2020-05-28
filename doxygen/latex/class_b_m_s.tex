@@ -1,0 +1,97 @@
+\hypertarget{class_b_m_s}{}\doxysection{Класс B\+MS}
+\label{class_b_m_s}\index{BMS@{BMS}}
+
+
+Раздел 3. Раздел битового отображения.  
+
+
+
+
+{\ttfamily \#include $<$bms.\+h$>$}
+
+Граф наследования\+:B\+MS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_m_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_m_s_1_1_data}{Data}}
+\begin{DoxyCompactList}\small\item\em Структура данных, описывающая содержание раздела битового отображения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_m_s_a763b5a616fd2231bf94edb4cc056a2c2}{B\+MS}} ()
+\item 
+\mbox{\hyperlink{class_b_m_s_a27d4f84f799a1a4bc2e0cd004b00f077}{$\sim$\+B\+MS}} ()
+\item 
+void \mbox{\hyperlink{class_b_m_s_ab0c820c83402d9a0e6d489825689d760}{read\+Sec}} (ifstream $\ast$file, \mbox{\hyperlink{struct_b_m_s_1_1_data}{Data}} $\ast$d, int)
+\item 
+Q\+List$<$ bool $>$ \mbox{\hyperlink{class_b_m_s_a4a053d66ebc9310f384834f028ab514e}{get\+Bit\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{class_b_m_s_aefc7ff8058b262946d3bd50f347202cc}{uni\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Раздел 3. Раздел битового отображения. 
+
+Данный отдел не является обязательный. Содержание\+: Длина раздела, бит на точку сетки, в соответствующей последовательности обозначает пропуск (бит 0) или включение (бит 1) данных в соответусвующих точках 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_b_m_s_a763b5a616fd2231bf94edb4cc056a2c2}\label{class_b_m_s_a763b5a616fd2231bf94edb4cc056a2c2}} 
+\index{BMS@{BMS}!BMS@{BMS}}
+\index{BMS@{BMS}!BMS@{BMS}}
+\doxysubsubsection{\texorpdfstring{BMS()}{BMS()}}
+{\footnotesize\ttfamily B\+M\+S\+::\+B\+MS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_m_s_a27d4f84f799a1a4bc2e0cd004b00f077}\label{class_b_m_s_a27d4f84f799a1a4bc2e0cd004b00f077}} 
+\index{BMS@{BMS}!````~BMS@{$\sim$BMS}}
+\index{````~BMS@{$\sim$BMS}!BMS@{BMS}}
+\doxysubsubsection{\texorpdfstring{$\sim$BMS()}{~BMS()}}
+{\footnotesize\ttfamily B\+M\+S\+::$\sim$\+B\+MS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_b_m_s_a4a053d66ebc9310f384834f028ab514e}\label{class_b_m_s_a4a053d66ebc9310f384834f028ab514e}} 
+\index{BMS@{BMS}!getBitMap@{getBitMap}}
+\index{getBitMap@{getBitMap}!BMS@{BMS}}
+\doxysubsubsection{\texorpdfstring{getBitMap()}{getBitMap()}}
+{\footnotesize\ttfamily Q\+List$<$bool$>$ B\+M\+S\+::get\+Bit\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Получение битовой карты \mbox{\Hypertarget{class_b_m_s_ab0c820c83402d9a0e6d489825689d760}\label{class_b_m_s_ab0c820c83402d9a0e6d489825689d760}} 
+\index{BMS@{BMS}!readSec@{readSec}}
+\index{readSec@{readSec}!BMS@{BMS}}
+\doxysubsubsection{\texorpdfstring{readSec()}{readSec()}}
+{\footnotesize\ttfamily void B\+M\+S\+::read\+Sec (\begin{DoxyParamCaption}\item[{ifstream $\ast$}]{file,  }\item[{\mbox{\hyperlink{struct_b_m_s_1_1_data}{B\+M\+S\+::\+Data}} $\ast$}]{d,  }\item[{int}]{point\+Quantity }\end{DoxyParamCaption})}
+
+Чтение секции 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em file} & Указатель на файл кодировки grb \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Указатель на структуру \mbox{\hyperlink{struct_b_m_s_1_1_data}{Data}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em point\+Quantity} & Количество точек \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_b_m_s_aefc7ff8058b262946d3bd50f347202cc}\label{class_b_m_s_aefc7ff8058b262946d3bd50f347202cc}} 
+\index{BMS@{BMS}!uniData@{uniData}}
+\index{uniData@{uniData}!BMS@{BMS}}
+\doxysubsubsection{\texorpdfstring{uniData}{uniData}}
+{\footnotesize\ttfamily friend struct \mbox{\hyperlink{structuni_data}{uni\+Data}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{bms_8h}{bms.\+h}}\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{bms_8cpp}{bms.\+cpp}}\end{DoxyCompactItemize}

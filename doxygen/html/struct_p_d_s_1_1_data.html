@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Структура PDS::Data</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct_p_d_s_1_1_data.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_p_d_s_1_1_data-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура PDS::Data</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура данных, описывающая содержание раздела определения продукции  
+ <a href="struct_p_d_s_1_1_data.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pds_8h_source.html">pds.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a8883634706a29dd398a366bc14d85387"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a8883634706a29dd398a366bc14d85387">sectionLength</a></td></tr>
+<tr class="memdesc:a8883634706a29dd398a366bc14d85387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина секции  <a href="struct_p_d_s_1_1_data.html#a8883634706a29dd398a366bc14d85387">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8883634706a29dd398a366bc14d85387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb395bce70d398f8f950f6c9ec60282e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#acb395bce70d398f8f950f6c9ec60282e">parameter_table_version_number</a></td></tr>
+<tr class="memdesc:acb395bce70d398f8f950f6c9ec60282e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер версии основных таблиц GRIB.  <a href="struct_p_d_s_1_1_data.html#acb395bce70d398f8f950f6c9ec60282e">Подробнее...</a><br /></td></tr>
+<tr class="separator:acb395bce70d398f8f950f6c9ec60282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36dbb09bc459f405db7c51219f02f2de"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a36dbb09bc459f405db7c51219f02f2de">identification_of_center</a></td></tr>
+<tr class="memdesc:a36dbb09bc459f405db7c51219f02f2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор центрального производителя  <a href="struct_p_d_s_1_1_data.html#a36dbb09bc459f405db7c51219f02f2de">Подробнее...</a><br /></td></tr>
+<tr class="separator:a36dbb09bc459f405db7c51219f02f2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bfc8749a00140f029205096a1775c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ab4bfc8749a00140f029205096a1775c5">generating_process_ID_number</a></td></tr>
+<tr class="memdesc:ab4bfc8749a00140f029205096a1775c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цифровой ID процесса генерации  <a href="struct_p_d_s_1_1_data.html#ab4bfc8749a00140f029205096a1775c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab4bfc8749a00140f029205096a1775c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae281f896774127cbafef3c333e8b4108"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ae281f896774127cbafef3c333e8b4108">grid_identification</a></td></tr>
+<tr class="memdesc:ae281f896774127cbafef3c333e8b4108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификация сетки (географическое положение и площадь)  <a href="struct_p_d_s_1_1_data.html#ae281f896774127cbafef3c333e8b4108">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae281f896774127cbafef3c333e8b4108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc769b204e5eacc615d84608bb3e3f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a4bc769b204e5eacc615d84608bb3e3f4">GDS</a></td></tr>
+<tr class="memdesc:a4bc769b204e5eacc615d84608bb3e3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг наличия <a class="el" href="class_g_d_s.html" title="Раздел 2. Раздел описания сетки.">GDS</a>(true-included,else omitted)  <a href="struct_p_d_s_1_1_data.html#a4bc769b204e5eacc615d84608bb3e3f4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4bc769b204e5eacc615d84608bb3e3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e261e768394ffb37e63a89f10ff68d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ab0e261e768394ffb37e63a89f10ff68d">BMS</a></td></tr>
+<tr class="memdesc:ab0e261e768394ffb37e63a89f10ff68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг наличия <a class="el" href="class_b_m_s.html" title="Раздел 3. Раздел битового отображения.">BMS</a>(true-included,else omitted)  <a href="struct_p_d_s_1_1_data.html#ab0e261e768394ffb37e63a89f10ff68d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0e261e768394ffb37e63a89f10ff68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c42bafbe0dbd9da9cc7261f2a51ac7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a4c42bafbe0dbd9da9cc7261f2a51ac7f">indicator_of_parameter_and_units</a></td></tr>
+<tr class="memdesc:a4c42bafbe0dbd9da9cc7261f2a51ac7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индикатор параметра и единиц измерения  <a href="struct_p_d_s_1_1_data.html#a4c42bafbe0dbd9da9cc7261f2a51ac7f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4c42bafbe0dbd9da9cc7261f2a51ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87d2cb2f34ac98ef4ff960e2df4f6ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ac87d2cb2f34ac98ef4ff960e2df4f6ce">indicator_of_type_of_level_or_layer</a></td></tr>
+<tr class="memdesc:ac87d2cb2f34ac98ef4ff960e2df4f6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индикатор типа уровня или слоя  <a href="struct_p_d_s_1_1_data.html#ac87d2cb2f34ac98ef4ff960e2df4f6ce">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac87d2cb2f34ac98ef4ff960e2df4f6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f03713e31d69b0883b492e137fe6c4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a1f03713e31d69b0883b492e137fe6c4f">info_of_the_level_or_layer</a></td></tr>
+<tr class="memdesc:a1f03713e31d69b0883b492e137fe6c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота, давление и т. д. уровня или слоя  <a href="struct_p_d_s_1_1_data.html#a1f03713e31d69b0883b492e137fe6c4f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1f03713e31d69b0883b492e137fe6c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace5b13b98467271cc4d3584a03ff44f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#aace5b13b98467271cc4d3584a03ff44f">year</a></td></tr>
+<tr class="memdesc:aace5b13b98467271cc4d3584a03ff44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Год  <a href="struct_p_d_s_1_1_data.html#aace5b13b98467271cc4d3584a03ff44f">Подробнее...</a><br /></td></tr>
+<tr class="separator:aace5b13b98467271cc4d3584a03ff44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1af9e6c588aca3d421f7139b7e5a92a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ab1af9e6c588aca3d421f7139b7e5a92a">month</a></td></tr>
+<tr class="memdesc:ab1af9e6c588aca3d421f7139b7e5a92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Месяц  <a href="struct_p_d_s_1_1_data.html#ab1af9e6c588aca3d421f7139b7e5a92a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab1af9e6c588aca3d421f7139b7e5a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7fa349db97e5d61fb9b33ee97b9825"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#acc7fa349db97e5d61fb9b33ee97b9825">day</a></td></tr>
+<tr class="memdesc:acc7fa349db97e5d61fb9b33ee97b9825"><td class="mdescLeft">&#160;</td><td class="mdescRight">День  <a href="struct_p_d_s_1_1_data.html#acc7fa349db97e5d61fb9b33ee97b9825">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc7fa349db97e5d61fb9b33ee97b9825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86244ebb01b3e0fb4d357d09d8ca54fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a86244ebb01b3e0fb4d357d09d8ca54fe">hour</a></td></tr>
+<tr class="memdesc:a86244ebb01b3e0fb4d357d09d8ca54fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Час  <a href="struct_p_d_s_1_1_data.html#a86244ebb01b3e0fb4d357d09d8ca54fe">Подробнее...</a><br /></td></tr>
+<tr class="separator:a86244ebb01b3e0fb4d357d09d8ca54fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ab8917eb8a0ad87471cb560de52a1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a71ab8917eb8a0ad87471cb560de52a1f">minut</a></td></tr>
+<tr class="memdesc:a71ab8917eb8a0ad87471cb560de52a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минута  <a href="struct_p_d_s_1_1_data.html#a71ab8917eb8a0ad87471cb560de52a1f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a71ab8917eb8a0ad87471cb560de52a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36044bbfb284fb2250a973fa26a41d38"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a36044bbfb284fb2250a973fa26a41d38">refDate</a></td></tr>
+<tr class="separator:a36044bbfb284fb2250a973fa26a41d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3d9a0da7897da352f8bbebdc4ac882"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a3d3d9a0da7897da352f8bbebdc4ac882">curDate</a></td></tr>
+<tr class="separator:a3d3d9a0da7897da352f8bbebdc4ac882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09211511e3467dd57b7138caa13e240"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ab09211511e3467dd57b7138caa13e240">forecast_time_unit</a></td></tr>
+<tr class="memdesc:ab09211511e3467dd57b7138caa13e240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Единица времени прогноза <a class="el" href="tablessection1_8h.html" title="Файл, описывающий кодовые таблицы раздела 1.">tablessection1.h</a> TimeUnit.  <a href="struct_p_d_s_1_1_data.html#ab09211511e3467dd57b7138caa13e240">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab09211511e3467dd57b7138caa13e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7efdbfd357564309b8b2bb479b6cc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a4e7efdbfd357564309b8b2bb479b6cc9">P1</a></td></tr>
+<tr class="separator:a4e7efdbfd357564309b8b2bb479b6cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8631a37207d8a68fc89124d0d548c081"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a8631a37207d8a68fc89124d0d548c081">P2</a></td></tr>
+<tr class="memdesc:a8631a37207d8a68fc89124d0d548c081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Периоды времени  <a href="struct_p_d_s_1_1_data.html#a8631a37207d8a68fc89124d0d548c081">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8631a37207d8a68fc89124d0d548c081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64ae17c2b0435a27b3f1863c2c261ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ab64ae17c2b0435a27b3f1863c2c261ca">time_range_indicator</a></td></tr>
+<tr class="memdesc:ab64ae17c2b0435a27b3f1863c2c261ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель времени  <a href="struct_p_d_s_1_1_data.html#ab64ae17c2b0435a27b3f1863c2c261ca">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab64ae17c2b0435a27b3f1863c2c261ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae419e3cd72eab60361bd4769460eb50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#aae419e3cd72eab60361bd4769460eb50">periodSec</a></td></tr>
+<tr class="memdesc:aae419e3cd72eab60361bd4769460eb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Период в секундах  <a href="struct_p_d_s_1_1_data.html#aae419e3cd72eab60361bd4769460eb50">Подробнее...</a><br /></td></tr>
+<tr class="separator:aae419e3cd72eab60361bd4769460eb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68a0f040cfb731bad82135758efafc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ac68a0f040cfb731bad82135758efafc6">number_missing_from_averages_or_accumulations</a></td></tr>
+<tr class="memdesc:ac68a0f040cfb731bad82135758efafc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Число утраченных случаев в расчете в случае статистической обработки  <a href="struct_p_d_s_1_1_data.html#ac68a0f040cfb731bad82135758efafc6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac68a0f040cfb731bad82135758efafc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe89888a73d6470f518de83dfc07a5de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#abe89888a73d6470f518de83dfc07a5de">century</a></td></tr>
+<tr class="memdesc:abe89888a73d6470f518de83dfc07a5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Век  <a href="struct_p_d_s_1_1_data.html#abe89888a73d6470f518de83dfc07a5de">Подробнее...</a><br /></td></tr>
+<tr class="separator:abe89888a73d6470f518de83dfc07a5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3161567f137f9bae1dca5f93e2b42bbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#a3161567f137f9bae1dca5f93e2b42bbc">identification_of_sub_center</a></td></tr>
+<tr class="memdesc:a3161567f137f9bae1dca5f93e2b42bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель подцентра  <a href="struct_p_d_s_1_1_data.html#a3161567f137f9bae1dca5f93e2b42bbc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3161567f137f9bae1dca5f93e2b42bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad745f51b7f24c8fc1e829dd3c10fdda7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_d_s_1_1_data.html#ad745f51b7f24c8fc1e829dd3c10fdda7">D</a></td></tr>
+<tr class="memdesc:ad745f51b7f24c8fc1e829dd3c10fdda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Десятичный масштабный коэффициент D.  <a href="struct_p_d_s_1_1_data.html#ad745f51b7f24c8fc1e829dd3c10fdda7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad745f51b7f24c8fc1e829dd3c10fdda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура данных, описывающая содержание раздела определения продукции </p>
+</div><h2 class="groupheader">Данные класса</h2>
+<a id="ab0e261e768394ffb37e63a89f10ff68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e261e768394ffb37e63a89f10ff68d">&#9670;&nbsp;</a></span>BMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PDS::Data::BMS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг наличия <a class="el" href="class_b_m_s.html" title="Раздел 3. Раздел битового отображения.">BMS</a>(true-included,else omitted) </p>
+
+</div>
+</div>
+<a id="abe89888a73d6470f518de83dfc07a5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe89888a73d6470f518de83dfc07a5de">&#9670;&nbsp;</a></span>century</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::century</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Век </p>
+
+</div>
+</div>
+<a id="a3d3d9a0da7897da352f8bbebdc4ac882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3d9a0da7897da352f8bbebdc4ac882">&#9670;&nbsp;</a></span>curDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long PDS::Data::curDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad745f51b7f24c8fc1e829dd3c10fdda7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad745f51b7f24c8fc1e829dd3c10fdda7">&#9670;&nbsp;</a></span>D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Десятичный масштабный коэффициент D. </p>
+
+</div>
+</div>
+<a id="acc7fa349db97e5d61fb9b33ee97b9825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7fa349db97e5d61fb9b33ee97b9825">&#9670;&nbsp;</a></span>day</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::day</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>День </p>
+
+</div>
+</div>
+<a id="ab09211511e3467dd57b7138caa13e240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09211511e3467dd57b7138caa13e240">&#9670;&nbsp;</a></span>forecast_time_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::forecast_time_unit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Единица времени прогноза <a class="el" href="tablessection1_8h.html" title="Файл, описывающий кодовые таблицы раздела 1.">tablessection1.h</a> TimeUnit. </p>
+
+</div>
+</div>
+<a id="a4bc769b204e5eacc615d84608bb3e3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc769b204e5eacc615d84608bb3e3f4">&#9670;&nbsp;</a></span>GDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PDS::Data::GDS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг наличия <a class="el" href="class_g_d_s.html" title="Раздел 2. Раздел описания сетки.">GDS</a>(true-included,else omitted) </p>
+
+</div>
+</div>
+<a id="ab4bfc8749a00140f029205096a1775c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4bfc8749a00140f029205096a1775c5">&#9670;&nbsp;</a></span>generating_process_ID_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::generating_process_ID_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Цифровой ID процесса генерации </p>
+
+</div>
+</div>
+<a id="ae281f896774127cbafef3c333e8b4108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae281f896774127cbafef3c333e8b4108">&#9670;&nbsp;</a></span>grid_identification</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::grid_identification</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Идентификация сетки (географическое положение и площадь) </p>
+
+</div>
+</div>
+<a id="a86244ebb01b3e0fb4d357d09d8ca54fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86244ebb01b3e0fb4d357d09d8ca54fe">&#9670;&nbsp;</a></span>hour</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::hour</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Час </p>
+
+</div>
+</div>
+<a id="a36dbb09bc459f405db7c51219f02f2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dbb09bc459f405db7c51219f02f2de">&#9670;&nbsp;</a></span>identification_of_center</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PDS::Data::identification_of_center</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Идентификатор центрального производителя </p>
+
+</div>
+</div>
+<a id="a3161567f137f9bae1dca5f93e2b42bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3161567f137f9bae1dca5f93e2b42bbc">&#9670;&nbsp;</a></span>identification_of_sub_center</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::identification_of_sub_center</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель подцентра </p>
+
+</div>
+</div>
+<a id="a4c42bafbe0dbd9da9cc7261f2a51ac7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c42bafbe0dbd9da9cc7261f2a51ac7f">&#9670;&nbsp;</a></span>indicator_of_parameter_and_units</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PDS::Data::indicator_of_parameter_and_units</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Индикатор параметра и единиц измерения </p>
+
+</div>
+</div>
+<a id="ac87d2cb2f34ac98ef4ff960e2df4f6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87d2cb2f34ac98ef4ff960e2df4f6ce">&#9670;&nbsp;</a></span>indicator_of_type_of_level_or_layer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::indicator_of_type_of_level_or_layer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Индикатор типа уровня или слоя </p>
+
+</div>
+</div>
+<a id="a1f03713e31d69b0883b492e137fe6c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f03713e31d69b0883b492e137fe6c4f">&#9670;&nbsp;</a></span>info_of_the_level_or_layer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::info_of_the_level_or_layer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Высота, давление и т. д. уровня или слоя </p>
+
+</div>
+</div>
+<a id="a71ab8917eb8a0ad87471cb560de52a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ab8917eb8a0ad87471cb560de52a1f">&#9670;&nbsp;</a></span>minut</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::minut</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Минута </p>
+
+</div>
+</div>
+<a id="ab1af9e6c588aca3d421f7139b7e5a92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1af9e6c588aca3d421f7139b7e5a92a">&#9670;&nbsp;</a></span>month</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::month</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Месяц </p>
+
+</div>
+</div>
+<a id="ac68a0f040cfb731bad82135758efafc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68a0f040cfb731bad82135758efafc6">&#9670;&nbsp;</a></span>number_missing_from_averages_or_accumulations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::number_missing_from_averages_or_accumulations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Число утраченных случаев в расчете в случае статистической обработки </p>
+
+</div>
+</div>
+<a id="a4e7efdbfd357564309b8b2bb479b6cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7efdbfd357564309b8b2bb479b6cc9">&#9670;&nbsp;</a></span>P1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::P1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8631a37207d8a68fc89124d0d548c081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8631a37207d8a68fc89124d0d548c081">&#9670;&nbsp;</a></span>P2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::P2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Периоды времени </p>
+
+</div>
+</div>
+<a id="acb395bce70d398f8f950f6c9ec60282e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb395bce70d398f8f950f6c9ec60282e">&#9670;&nbsp;</a></span>parameter_table_version_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::parameter_table_version_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Номер версии основных таблиц GRIB. </p>
+
+</div>
+</div>
+<a id="aae419e3cd72eab60361bd4769460eb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae419e3cd72eab60361bd4769460eb50">&#9670;&nbsp;</a></span>periodSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::periodSec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Период в секундах </p>
+
+</div>
+</div>
+<a id="a36044bbfb284fb2250a973fa26a41d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36044bbfb284fb2250a973fa26a41d38">&#9670;&nbsp;</a></span>refDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long PDS::Data::refDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8883634706a29dd398a366bc14d85387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8883634706a29dd398a366bc14d85387">&#9670;&nbsp;</a></span>sectionLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long PDS::Data::sectionLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Длина секции </p>
+
+</div>
+</div>
+<a id="ab64ae17c2b0435a27b3f1863c2c261ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64ae17c2b0435a27b3f1863c2c261ca">&#9670;&nbsp;</a></span>time_range_indicator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::time_range_indicator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель времени </p>
+
+</div>
+</div>
+<a id="aace5b13b98467271cc4d3584a03ff44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace5b13b98467271cc4d3584a03ff44f">&#9670;&nbsp;</a></span>year</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PDS::Data::year</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Год </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>C:/Users/kicha/Documents/Qt/parser/<a class="el" href="pds_8h_source.html">pds.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_p_d_s.html">PDS</a></li><li class="navelem"><a class="el" href="struct_p_d_s_1_1_data.html">Data</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

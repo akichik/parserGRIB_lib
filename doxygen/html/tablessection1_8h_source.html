@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Парсер формата GRIB: Исходный файл C:/Users/kicha/Documents/Qt/parser/tablessection1.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Парсер формата GRIB
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('tablessection1_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tablessection1.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tablessection1_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TABLESSECTION1_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935e">   12</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935e">OrigCenters</a> </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea1eb544f74059b7291c897d8ae696fc3b">USWS_NationalMetCenter</a>=7,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea075c3b1cce5b4d4621a643f3bf8e36e2">USWS_NWSTelecommsGateway</a>=8,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea0378fbdebae13aeb34c106e16db55f0c">USWS_FieldStations</a>=9,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ead98c9c918a447175addaef32c9baf799">JapaneseMA_Tokyo</a>=34,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea9ec58050d47bf267bd514694f1ed252d">NHC_Miami</a>=52,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaefc3e47b92e8ec1d495e00fa9d33e3d2">CanadianMS_Montreal</a>=54,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea158da7ceeed0253e4899a1546b2a51da">USAF_GWC</a>=57,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea361de98217d57cc56e5ac37690a44688">USNavy_FNOC</a>=58,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eab701afa2c70fff091534447578b57329">NOAAFSL_BoulderCO</a>=59,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea10875bc411e742e4496bde6fd6d6e8d4">UKMO_Bracknell</a>=74,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaf0281115714b93689e380ca310fc75f4">FWS_Toulouse</a>=85,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaafafc7a086f96baed3f76650e4fcdc5d">ESA</a>=97,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eadb515273d4a03fdeada3734577b6b27f">ECforMediumRangeForecaste</a>=98,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaf9e06fda72b2d6fb8ca7c41623e7d89e">DeBilt</a>=99</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476d">   30</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476d">TimeUnit</a> </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da0a7d55be9d12a369a6a8da0fb517fba4">minute</a>=0,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3">hour</a>=1,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8">day</a>=2,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286">month</a>=3,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8">year</a>=4,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da2787910b1b16428d65412fca2718a92e">decade</a>=5,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476dafea087517c26fadd409bd4b9dc642555">normal</a>=6,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da151aa0094f11d8455fb208721955f152">century</a>=7,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476daa9f0e61a137d86aa9db53465e0801612">second</a>=254</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63">   43</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63">dataTypes</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a71c6d548a22cfb1552f5ea4944fe904f">GRB_PRESSURE</a>= 1,  </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63aba7ff0b5ed98569ef0b6280c95ae756e">GRB_PRESSURE_MSL</a>=2,  </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a73e0881b9a57576a5fff5c6b5bd33250">GRB_GEOPOT_HGT</a>=7, </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a464605f3ca5d7bf9e6b9267667f8c218">GRB_TEMP</a>=11, </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63af70a5f41b54aa0e5b4d0d41901ccec7e">GRB_TEMP_POT</a>=13, </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a23b5ff0d863b613e35c1a3e623313365">GRB_TMAX</a>=15, </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a40d3c5c1ea80722b3f2e41669566afe4">GRB_TMIN</a>=16, </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a32935299e93b8e21795f4118049145f1">GRB_DEWPOINT</a>=17,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63adf4495429350d931e01fdec8642296d9">GRB_WIND_DIR</a>=31, </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a0e080631faf6ab9bb520a039ff8bb9f0">GRB_WIND_SPEED</a>=32,  </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63acec46970f1caa34e136cc89571332003">GRB_WIND_VX</a>=33,  </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ad5a883ee8bf76ff14e18feb36aee89a9">GRB_WIND_VY</a>=34,  </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63aeb6b9a751e1f37b7168655cbf8a17da9">GRB_CUR_VX</a>=49,   </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a3e00d2ea25281c02998e1b1247af915b">GRB_CUR_VY</a>=50,   </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ab11570f65c98392b71883c7b4f423c91">GRB_HUMID_SPEC</a>=51, </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a4ac6ba586d531e172d09f38816aa320d">GRB_HUMID_REL</a>=52,   </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a0f3827744b1536e3af6169b84dee3cf6">GRB_PRECIP_RATE</a>=59,  </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63aefe67cd043759e099d2be20641f25999">GRB_PRECIP_TOT</a>=61,   </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a487034653ee14850a01b2bf7408f0900">GRB_SNOW_DEPTH</a>=66,   </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a4034f1cfd631cc459d8919be2de9c11e">GRB_CLOUD_TOT</a>=71,   </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a69f3950a1f5d4c6c92b51547f8ef1384">GRB_CLOUD_LOW</a>=72,   </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a1210cd7eb0650569fd858df373b4ae5f">GRB_CLOUD_MID</a>=73,   </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a1cbe1b48eb1f6d752a4751e2d1f613d8">GRB_CLOUD_HIG</a>=74,   </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// Waves</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ac5f3d98cd25a0e08feda41f1a66392a9">GRB_WAV_SIG_HT</a>=100,   </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ab6ea92115ac474a6ddf0f7e31a4515a6">GRB_WAV_WND_DIR</a>=101,  </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a32ef5a635dcc30b2e6135b8d0b2031ab">GRB_WAV_WND_HT</a>=102,   </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ad989a9c33e384183bebe445d6d9670a5">GRB_WAV_WND_PER</a>=103,   </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a1d58babcf8f6edfdb38b563f243f7cfb">GRB_WAV_SWL_DIR</a>=104,   </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63adb39007b3b1a684dd7cc6290bc1a836a">GRB_WAV_SWL_HT</a>=105,   </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ab0f309a99f9f2f1061581272aab98768">GRB_WAV_SWL_PER</a>=106,   </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a73e333409d1aa72a105320fca08b8425">GRB_WAV_PRIM_DIR</a>=107,   </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63accee8e2a5ce46d1f79e6d9121cdb0b39">GRB_WAV_PRIM_PER</a>=108,   </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ae15111819c97e8b67a84d78e49342048">GRB_WAV_SCDY_DIR</a>=109,   </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ad3d4d9cee1b7eb8e636b7f484d488701">GRB_WAV_SCDY_PER</a>=110,   </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0b">   84</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0b">levelType</a></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba8d16c63bd8336d5e76cbbaa6ce20b799">LV_GND_SURF</a>=1, </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba41a85596643d882009b8a81ff1c3def9">LV_ISOTHERM0</a>=4, </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0badcee0394e52fa7b7ca4449de49f0c657">LV_ISOBARIC</a>=100, </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0bad257b22886d2fb1e1f039dd8eeb6567d">LV_MSL</a>=102, </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0bacb7b3e0209eba3bb35807b95442b2fd5">LV_ABOV_MSL</a>=103, </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba29d7c6923a2895b27f258e976837a21e">LV_ABOV_GND</a>=105,  </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba705c634d60cc2415211ee447d5aa6bdc">LV_SIGMA</a>=107, </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba31bbdab9f834d132b503f585eb16463c">LV_ATMOS_ALL</a>=200, </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // TABLESSECTION1_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a73e0881b9a57576a5fff5c6b5bd33250"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a73e0881b9a57576a5fff5c6b5bd33250">dataTypes::GRB_GEOPOT_HGT</a></div><div class="ttdeci">@ GRB_GEOPOT_HGT</div><div class="ttdoc">Высота геопотенциала, gpm.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a1210cd7eb0650569fd858df373b4ae5f"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a1210cd7eb0650569fd858df373b4ae5f">dataTypes::GRB_CLOUD_MID</a></div><div class="ttdeci">@ GRB_CLOUD_MID</div><div class="ttdoc">Нижняя облачность, %.</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476daa9f0e61a137d86aa9db53465e0801612"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476daa9f0e61a137d86aa9db53465e0801612">TimeUnit::second</a></div><div class="ttdeci">@ second</div><div class="ttdoc">Секунда</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da151aa0094f11d8455fb208721955f152"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da151aa0094f11d8455fb208721955f152">TimeUnit::century</a></div><div class="ttdeci">@ century</div><div class="ttdoc">Век</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da7436f942d5ea836cb84f1bb2527d8286">TimeUnit::month</a></div><div class="ttdeci">@ month</div><div class="ttdoc">Месяц</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a40d3c5c1ea80722b3f2e41669566afe4"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a40d3c5c1ea80722b3f2e41669566afe4">dataTypes::GRB_TMIN</a></div><div class="ttdeci">@ GRB_TMIN</div><div class="ttdoc">Минимальная температура</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935eaafafc7a086f96baed3f76650e4fcdc5d"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaafafc7a086f96baed3f76650e4fcdc5d">OrigCenters::ESA</a></div><div class="ttdeci">@ ESA</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a4034f1cfd631cc459d8919be2de9c11e"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a4034f1cfd631cc459d8919be2de9c11e">dataTypes::GRB_CLOUD_TOT</a></div><div class="ttdeci">@ GRB_CLOUD_TOT</div><div class="ttdoc">Общая облачность, %.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a0f3827744b1536e3af6169b84dee3cf6"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a0f3827744b1536e3af6169b84dee3cf6">dataTypes::GRB_PRECIP_RATE</a></div><div class="ttdeci">@ GRB_PRECIP_RATE</div><div class="ttdoc">Интенсивность выпадения осадков</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea075c3b1cce5b4d4621a643f3bf8e36e2"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea075c3b1cce5b4d4621a643f3bf8e36e2">OrigCenters::USWS_NWSTelecommsGateway</a></div><div class="ttdeci">@ USWS_NWSTelecommsGateway</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea158da7ceeed0253e4899a1546b2a51da"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea158da7ceeed0253e4899a1546b2a51da">OrigCenters::USAF_GWC</a></div><div class="ttdeci">@ USAF_GWC</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0ba41a85596643d882009b8a81ff1c3def9"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba41a85596643d882009b8a81ff1c3def9">levelType::LV_ISOTHERM0</a></div><div class="ttdeci">@ LV_ISOTHERM0</div><div class="ttdoc">Уровень изотермы</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935eaf9e06fda72b2d6fb8ca7c41623e7d89e"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaf9e06fda72b2d6fb8ca7c41623e7d89e">OrigCenters::DeBilt</a></div><div class="ttdeci">@ DeBilt</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63acec46970f1caa34e136cc89571332003"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63acec46970f1caa34e136cc89571332003">dataTypes::GRB_WIND_VX</a></div><div class="ttdeci">@ GRB_WIND_VX</div><div class="ttdoc">Компонента ветра u.</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0ba8d16c63bd8336d5e76cbbaa6ce20b799"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba8d16c63bd8336d5e76cbbaa6ce20b799">levelType::LV_GND_SURF</a></div><div class="ttdeci">@ LV_GND_SURF</div><div class="ttdoc">Земная или водная поверхность</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea0378fbdebae13aeb34c106e16db55f0c"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea0378fbdebae13aeb34c106e16db55f0c">OrigCenters::USWS_FieldStations</a></div><div class="ttdeci">@ USWS_FieldStations</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935eadb515273d4a03fdeada3734577b6b27f"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eadb515273d4a03fdeada3734577b6b27f">OrigCenters::ECforMediumRangeForecaste</a></div><div class="ttdeci">@ ECforMediumRangeForecaste</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da896c55cc5e46fab38ce9f51ebf7bfcd3">TimeUnit::hour</a></div><div class="ttdeci">@ hour</div><div class="ttdoc">Час</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da2787910b1b16428d65412fca2718a92e"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da2787910b1b16428d65412fca2718a92e">TimeUnit::decade</a></div><div class="ttdeci">@ decade</div><div class="ttdoc">Декада (10 лет)</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0bad257b22886d2fb1e1f039dd8eeb6567d"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0bad257b22886d2fb1e1f039dd8eeb6567d">levelType::LV_MSL</a></div><div class="ttdeci">@ LV_MSL</div><div class="ttdoc">Средний уровень моря</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a32ef5a635dcc30b2e6135b8d0b2031ab"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a32ef5a635dcc30b2e6135b8d0b2031ab">dataTypes::GRB_WAV_WND_HT</a></div><div class="ttdeci">@ GRB_WAV_WND_HT</div><div class="ttdoc">Значимая высота ветровых волн</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ad3d4d9cee1b7eb8e636b7f484d488701"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ad3d4d9cee1b7eb8e636b7f484d488701">dataTypes::GRB_WAV_SCDY_PER</a></div><div class="ttdeci">@ GRB_WAV_SCDY_PER</div><div class="ttdoc">Вторичный средний период волн</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63">dataTypes</a></div><div class="ttdeci">dataTypes</div><div class="ttdoc">&lt; Указатель параметра</div><div class="ttdef"><b>Definition:</b> tablessection1.h:44</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63adf4495429350d931e01fdec8642296d9"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63adf4495429350d931e01fdec8642296d9">dataTypes::GRB_WIND_DIR</a></div><div class="ttdeci">@ GRB_WIND_DIR</div><div class="ttdoc">Напрвление ветра</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a3e00d2ea25281c02998e1b1247af915b"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a3e00d2ea25281c02998e1b1247af915b">dataTypes::GRB_CUR_VY</a></div><div class="ttdeci">@ GRB_CUR_VY</div><div class="ttdoc">Компонента течения v.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a464605f3ca5d7bf9e6b9267667f8c218"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a464605f3ca5d7bf9e6b9267667f8c218">dataTypes::GRB_TEMP</a></div><div class="ttdeci">@ GRB_TEMP</div><div class="ttdoc">Температура, K.</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0ba705c634d60cc2415211ee447d5aa6bdc"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba705c634d60cc2415211ee447d5aa6bdc">levelType::LV_SIGMA</a></div><div class="ttdeci">@ LV_SIGMA</div><div class="ttdoc">Уровень сигма</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63accee8e2a5ce46d1f79e6d9121cdb0b39"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63accee8e2a5ce46d1f79e6d9121cdb0b39">dataTypes::GRB_WAV_PRIM_PER</a></div><div class="ttdeci">@ GRB_WAV_PRIM_PER</div><div class="ttdoc">Основной средний период волн</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63adb39007b3b1a684dd7cc6290bc1a836a"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63adb39007b3b1a684dd7cc6290bc1a836a">dataTypes::GRB_WAV_SWL_HT</a></div><div class="ttdeci">@ GRB_WAV_SWL_HT</div><div class="ttdoc">Значимая высота зыби</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a4ac6ba586d531e172d09f38816aa320d"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a4ac6ba586d531e172d09f38816aa320d">dataTypes::GRB_HUMID_REL</a></div><div class="ttdeci">@ GRB_HUMID_REL</div><div class="ttdoc">Относительная влажность, %.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a1d58babcf8f6edfdb38b563f243f7cfb"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a1d58babcf8f6edfdb38b563f243f7cfb">dataTypes::GRB_WAV_SWL_DIR</a></div><div class="ttdeci">@ GRB_WAV_SWL_DIR</div><div class="ttdoc">Направление зыби</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea1eb544f74059b7291c897d8ae696fc3b"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea1eb544f74059b7291c897d8ae696fc3b">OrigCenters::USWS_NationalMetCenter</a></div><div class="ttdeci">@ USWS_NationalMetCenter</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da0a7d55be9d12a369a6a8da0fb517fba4"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da0a7d55be9d12a369a6a8da0fb517fba4">TimeUnit::minute</a></div><div class="ttdeci">@ minute</div><div class="ttdoc">Минута</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63aeb6b9a751e1f37b7168655cbf8a17da9"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63aeb6b9a751e1f37b7168655cbf8a17da9">dataTypes::GRB_CUR_VX</a></div><div class="ttdeci">@ GRB_CUR_VX</div><div class="ttdoc">Компонента течения u.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ab11570f65c98392b71883c7b4f423c91"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ab11570f65c98392b71883c7b4f423c91">dataTypes::GRB_HUMID_SPEC</a></div><div class="ttdeci">@ GRB_HUMID_SPEC</div><div class="ttdoc">Удельная влажность</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ad5a883ee8bf76ff14e18feb36aee89a9"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ad5a883ee8bf76ff14e18feb36aee89a9">dataTypes::GRB_WIND_VY</a></div><div class="ttdeci">@ GRB_WIND_VY</div><div class="ttdoc">Комонента ветра v.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a487034653ee14850a01b2bf7408f0900"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a487034653ee14850a01b2bf7408f0900">dataTypes::GRB_SNOW_DEPTH</a></div><div class="ttdeci">@ GRB_SNOW_DEPTH</div><div class="ttdoc">Высота снежного покрова</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ae15111819c97e8b67a84d78e49342048"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ae15111819c97e8b67a84d78e49342048">dataTypes::GRB_WAV_SCDY_DIR</a></div><div class="ttdeci">@ GRB_WAV_SCDY_DIR</div><div class="ttdoc">Вторичное направление волн</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a71c6d548a22cfb1552f5ea4944fe904f"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a71c6d548a22cfb1552f5ea4944fe904f">dataTypes::GRB_PRESSURE</a></div><div class="ttdeci">@ GRB_PRESSURE</div><div class="ttdoc">Давление, Pa.</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0bacb7b3e0209eba3bb35807b95442b2fd5"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0bacb7b3e0209eba3bb35807b95442b2fd5">levelType::LV_ABOV_MSL</a></div><div class="ttdeci">@ LV_ABOV_MSL</div><div class="ttdoc">Установленная высота над средним уровнем моря</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a73e333409d1aa72a105320fca08b8425"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a73e333409d1aa72a105320fca08b8425">dataTypes::GRB_WAV_PRIM_DIR</a></div><div class="ttdeci">@ GRB_WAV_PRIM_DIR</div><div class="ttdoc">Основное направление волн</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935eaefc3e47b92e8ec1d495e00fa9d33e3d2"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaefc3e47b92e8ec1d495e00fa9d33e3d2">OrigCenters::CanadianMS_Montreal</a></div><div class="ttdeci">@ CanadianMS_Montreal</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476d"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476d">TimeUnit</a></div><div class="ttdeci">TimeUnit</div><div class="ttdoc">&lt; Единица времени</div><div class="ttdef"><b>Definition:</b> tablessection1.h:31</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0ba29d7c6923a2895b27f258e976837a21e"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba29d7c6923a2895b27f258e976837a21e">levelType::LV_ABOV_GND</a></div><div class="ttdeci">@ LV_ABOV_GND</div><div class="ttdoc">Установленный уровень высоты над поверхностью</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ead98c9c918a447175addaef32c9baf799"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ead98c9c918a447175addaef32c9baf799">OrigCenters::JapaneseMA_Tokyo</a></div><div class="ttdeci">@ JapaneseMA_Tokyo</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a1cbe1b48eb1f6d752a4751e2d1f613d8"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a1cbe1b48eb1f6d752a4751e2d1f613d8">dataTypes::GRB_CLOUD_HIG</a></div><div class="ttdeci">@ GRB_CLOUD_HIG</div><div class="ttdoc">Средняя облачность</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935eaf0281115714b93689e380ca310fc75f4"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eaf0281115714b93689e380ca310fc75f4">OrigCenters::FWS_Toulouse</a></div><div class="ttdeci">@ FWS_Toulouse</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0b"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0b">levelType</a></div><div class="ttdeci">levelType</div><div class="ttdoc">&lt; Тип уровня или слоя</div><div class="ttdef"><b>Definition:</b> tablessection1.h:85</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea361de98217d57cc56e5ac37690a44688"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea361de98217d57cc56e5ac37690a44688">OrigCenters::USNavy_FNOC</a></div><div class="ttdeci">@ USNavy_FNOC</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476dafea087517c26fadd409bd4b9dc642555"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476dafea087517c26fadd409bd4b9dc642555">TimeUnit::normal</a></div><div class="ttdeci">@ normal</div><div class="ttdoc">Нормаль (30 лет)</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da628b7db04235f228d40adc671413a8c8">TimeUnit::day</a></div><div class="ttdeci">@ day</div><div class="ttdoc">День</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a23b5ff0d863b613e35c1a3e623313365"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a23b5ff0d863b613e35c1a3e623313365">dataTypes::GRB_TMAX</a></div><div class="ttdeci">@ GRB_TMAX</div><div class="ttdoc">Максимальная температура</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a69f3950a1f5d4c6c92b51547f8ef1384"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a69f3950a1f5d4c6c92b51547f8ef1384">dataTypes::GRB_CLOUD_LOW</a></div><div class="ttdeci">@ GRB_CLOUD_LOW</div><div class="ttdoc">Конвективная облачность, %.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ab0f309a99f9f2f1061581272aab98768"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ab0f309a99f9f2f1061581272aab98768">dataTypes::GRB_WAV_SWL_PER</a></div><div class="ttdeci">@ GRB_WAV_SWL_PER</div><div class="ttdoc">Средний период зыби</div></div>
+<div class="ttc" id="atablessection1_8h_html_add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8"><div class="ttname"><a href="tablessection1_8h.html#add9fe45e09605eee3e4a39c8a5c4476da84cdc76cabf41bd7c961f6ab12f117d8">TimeUnit::year</a></div><div class="ttdeci">@ year</div><div class="ttdoc">Год</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea9ec58050d47bf267bd514694f1ed252d"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea9ec58050d47bf267bd514694f1ed252d">OrigCenters::NHC_Miami</a></div><div class="ttdeci">@ NHC_Miami</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63af70a5f41b54aa0e5b4d0d41901ccec7e"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63af70a5f41b54aa0e5b4d0d41901ccec7e">dataTypes::GRB_TEMP_POT</a></div><div class="ttdeci">@ GRB_TEMP_POT</div><div class="ttdoc">Потенциальная температура, K.</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63aba7ff0b5ed98569ef0b6280c95ae756e"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63aba7ff0b5ed98569ef0b6280c95ae756e">dataTypes::GRB_PRESSURE_MSL</a></div><div class="ttdeci">@ GRB_PRESSURE_MSL</div><div class="ttdoc">Давление, приведенное к среднему уровню моря, Pa.</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935e"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935e">OrigCenters</a></div><div class="ttdeci">OrigCenters</div><div class="ttdoc">&lt;Идентификатор центра</div><div class="ttdef"><b>Definition:</b> tablessection1.h:13</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a0e080631faf6ab9bb520a039ff8bb9f0"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a0e080631faf6ab9bb520a039ff8bb9f0">dataTypes::GRB_WIND_SPEED</a></div><div class="ttdeci">@ GRB_WIND_SPEED</div><div class="ttdoc">Скорость ветра</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ad989a9c33e384183bebe445d6d9670a5"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ad989a9c33e384183bebe445d6d9670a5">dataTypes::GRB_WAV_WND_PER</a></div><div class="ttdeci">@ GRB_WAV_WND_PER</div><div class="ttdoc">Средний период ветровых волн</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935ea10875bc411e742e4496bde6fd6d6e8d4"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935ea10875bc411e742e4496bde6fd6d6e8d4">OrigCenters::UKMO_Bracknell</a></div><div class="ttdeci">@ UKMO_Bracknell</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0ba31bbdab9f834d132b503f585eb16463c"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0ba31bbdab9f834d132b503f585eb16463c">levelType::LV_ATMOS_ALL</a></div><div class="ttdeci">@ LV_ATMOS_ALL</div><div class="ttdoc">Вся атмосфера</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63aefe67cd043759e099d2be20641f25999"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63aefe67cd043759e099d2be20641f25999">dataTypes::GRB_PRECIP_TOT</a></div><div class="ttdeci">@ GRB_PRECIP_TOT</div><div class="ttdoc">Суммарное количество осадков</div></div>
+<div class="ttc" id="atablessection1_8h_html_ad78f5cb8ec67079becd95024f24c935eab701afa2c70fff091534447578b57329"><div class="ttname"><a href="tablessection1_8h.html#ad78f5cb8ec67079becd95024f24c935eab701afa2c70fff091534447578b57329">OrigCenters::NOAAFSL_BoulderCO</a></div><div class="ttdeci">@ NOAAFSL_BoulderCO</div></div>
+<div class="ttc" id="atablessection1_8h_html_a447eb6d893b0f024b4b6017b4c030e0badcee0394e52fa7b7ca4449de49f0c657"><div class="ttname"><a href="tablessection1_8h.html#a447eb6d893b0f024b4b6017b4c030e0badcee0394e52fa7b7ca4449de49f0c657">levelType::LV_ISOBARIC</a></div><div class="ttdeci">@ LV_ISOBARIC</div><div class="ttdoc">Изобарическая поверхность</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ac5f3d98cd25a0e08feda41f1a66392a9"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ac5f3d98cd25a0e08feda41f1a66392a9">dataTypes::GRB_WAV_SIG_HT</a></div><div class="ttdeci">@ GRB_WAV_SIG_HT</div><div class="ttdoc">Значимая высота комбинированных ветровых волн и зыби</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63ab6ea92115ac474a6ddf0f7e31a4515a6"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63ab6ea92115ac474a6ddf0f7e31a4515a6">dataTypes::GRB_WAV_WND_DIR</a></div><div class="ttdeci">@ GRB_WAV_WND_DIR</div><div class="ttdoc">Направление ветровых волны</div></div>
+<div class="ttc" id="atablessection1_8h_html_af917ba2c7f2c92a5e597bec8880cea63a32935299e93b8e21795f4118049145f1"><div class="ttname"><a href="tablessection1_8h.html#af917ba2c7f2c92a5e597bec8880cea63a32935299e93b8e21795f4118049145f1">dataTypes::GRB_DEWPOINT</a></div><div class="ttdeci">@ GRB_DEWPOINT</div><div class="ttdoc">Температура точки росы</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ecc0daaf6d1858b41148c21ca78b7518.html">Qt</a></li><li class="navelem"><a class="el" href="dir_1b7303f86ddf0d01e1ddc826cd74b4a8.html">parser</a></li><li class="navelem"><a class="el" href="tablessection1_8h.html">tablessection1.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+\hypertarget{struct_p_d_s_1_1_data}{}\doxysection{Структура P\+DS\+::Data}
+\label{struct_p_d_s_1_1_data}\index{PDS::Data@{PDS::Data}}
+
+
+Структура данных, описывающая содержание раздела определения продукции  
+
+
+
+
+{\ttfamily \#include $<$pds.\+h$>$}
+
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{struct_p_d_s_1_1_data_a8883634706a29dd398a366bc14d85387}{section\+Length}}
+\begin{DoxyCompactList}\small\item\em Длина секции \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_acb395bce70d398f8f950f6c9ec60282e}{parameter\+\_\+table\+\_\+version\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Номер версии основных таблиц G\+R\+IB. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_p_d_s_1_1_data_a36dbb09bc459f405db7c51219f02f2de}{identification\+\_\+of\+\_\+center}}
+\begin{DoxyCompactList}\small\item\em Идентификатор центрального производителя \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ab4bfc8749a00140f029205096a1775c5}{generating\+\_\+process\+\_\+\+I\+D\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Цифровой ID процесса генерации \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ae281f896774127cbafef3c333e8b4108}{grid\+\_\+identification}}
+\begin{DoxyCompactList}\small\item\em Идентификация сетки (географическое положение и площадь) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_p_d_s_1_1_data_a4bc769b204e5eacc615d84608bb3e3f4}{G\+DS}}
+\begin{DoxyCompactList}\small\item\em Флаг наличия \mbox{\hyperlink{class_g_d_s}{G\+DS}}(true-\/included,else omitted) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_p_d_s_1_1_data_ab0e261e768394ffb37e63a89f10ff68d}{B\+MS}}
+\begin{DoxyCompactList}\small\item\em Флаг наличия \mbox{\hyperlink{class_b_m_s}{B\+MS}}(true-\/included,else omitted) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{struct_p_d_s_1_1_data_a4c42bafbe0dbd9da9cc7261f2a51ac7f}{indicator\+\_\+of\+\_\+parameter\+\_\+and\+\_\+units}}
+\begin{DoxyCompactList}\small\item\em Индикатор параметра и единиц измерения \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ac87d2cb2f34ac98ef4ff960e2df4f6ce}{indicator\+\_\+of\+\_\+type\+\_\+of\+\_\+level\+\_\+or\+\_\+layer}}
+\begin{DoxyCompactList}\small\item\em Индикатор типа уровня или слоя \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_a1f03713e31d69b0883b492e137fe6c4f}{info\+\_\+of\+\_\+the\+\_\+level\+\_\+or\+\_\+layer}}
+\begin{DoxyCompactList}\small\item\em Высота, давление и т. д. уровня или слоя \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_aace5b13b98467271cc4d3584a03ff44f}{year}}
+\begin{DoxyCompactList}\small\item\em Год \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ab1af9e6c588aca3d421f7139b7e5a92a}{month}}
+\begin{DoxyCompactList}\small\item\em Месяц \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_acc7fa349db97e5d61fb9b33ee97b9825}{day}}
+\begin{DoxyCompactList}\small\item\em День \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_a86244ebb01b3e0fb4d357d09d8ca54fe}{hour}}
+\begin{DoxyCompactList}\small\item\em Час \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_a71ab8917eb8a0ad87471cb560de52a1f}{minut}}
+\begin{DoxyCompactList}\small\item\em Минута \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{struct_p_d_s_1_1_data_a36044bbfb284fb2250a973fa26a41d38}{ref\+Date}}
+\item 
+long long \mbox{\hyperlink{struct_p_d_s_1_1_data_a3d3d9a0da7897da352f8bbebdc4ac882}{cur\+Date}}
+\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ab09211511e3467dd57b7138caa13e240}{forecast\+\_\+time\+\_\+unit}}
+\begin{DoxyCompactList}\small\item\em Единица времени прогноза \mbox{\hyperlink{tablessection1_8h}{tablessection1.\+h}} Time\+Unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_a4e7efdbfd357564309b8b2bb479b6cc9}{P1}}
+\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_a8631a37207d8a68fc89124d0d548c081}{P2}}
+\begin{DoxyCompactList}\small\item\em Периоды времени \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ab64ae17c2b0435a27b3f1863c2c261ca}{time\+\_\+range\+\_\+indicator}}
+\begin{DoxyCompactList}\small\item\em Указатель времени \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_aae419e3cd72eab60361bd4769460eb50}{period\+Sec}}
+\begin{DoxyCompactList}\small\item\em Период в секундах \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ac68a0f040cfb731bad82135758efafc6}{number\+\_\+missing\+\_\+from\+\_\+averages\+\_\+or\+\_\+accumulations}}
+\begin{DoxyCompactList}\small\item\em Число утраченных случаев в расчете в случае статистической обработки \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_abe89888a73d6470f518de83dfc07a5de}{century}}
+\begin{DoxyCompactList}\small\item\em Век \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_a3161567f137f9bae1dca5f93e2b42bbc}{identification\+\_\+of\+\_\+sub\+\_\+center}}
+\begin{DoxyCompactList}\small\item\em Указатель подцентра \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_p_d_s_1_1_data_ad745f51b7f24c8fc1e829dd3c10fdda7}{D}}
+\begin{DoxyCompactList}\small\item\em Десятичный масштабный коэффициент D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Структура данных, описывающая содержание раздела определения продукции 
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ab0e261e768394ffb37e63a89f10ff68d}\label{struct_p_d_s_1_1_data_ab0e261e768394ffb37e63a89f10ff68d}} 
+\index{PDS::Data@{PDS::Data}!BMS@{BMS}}
+\index{BMS@{BMS}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{BMS}{BMS}}
+{\footnotesize\ttfamily bool P\+D\+S\+::\+Data\+::\+B\+MS}
+
+
+
+Флаг наличия \mbox{\hyperlink{class_b_m_s}{B\+MS}}(true-\/included,else omitted) 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_abe89888a73d6470f518de83dfc07a5de}\label{struct_p_d_s_1_1_data_abe89888a73d6470f518de83dfc07a5de}} 
+\index{PDS::Data@{PDS::Data}!century@{century}}
+\index{century@{century}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{century}{century}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::century}
+
+
+
+Век 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a3d3d9a0da7897da352f8bbebdc4ac882}\label{struct_p_d_s_1_1_data_a3d3d9a0da7897da352f8bbebdc4ac882}} 
+\index{PDS::Data@{PDS::Data}!curDate@{curDate}}
+\index{curDate@{curDate}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{curDate}{curDate}}
+{\footnotesize\ttfamily long long P\+D\+S\+::\+Data\+::cur\+Date}
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ad745f51b7f24c8fc1e829dd3c10fdda7}\label{struct_p_d_s_1_1_data_ad745f51b7f24c8fc1e829dd3c10fdda7}} 
+\index{PDS::Data@{PDS::Data}!D@{D}}
+\index{D@{D}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{D}{D}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::D}
+
+
+
+Десятичный масштабный коэффициент D. 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_acc7fa349db97e5d61fb9b33ee97b9825}\label{struct_p_d_s_1_1_data_acc7fa349db97e5d61fb9b33ee97b9825}} 
+\index{PDS::Data@{PDS::Data}!day@{day}}
+\index{day@{day}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::day}
+
+
+
+День 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ab09211511e3467dd57b7138caa13e240}\label{struct_p_d_s_1_1_data_ab09211511e3467dd57b7138caa13e240}} 
+\index{PDS::Data@{PDS::Data}!forecast\_time\_unit@{forecast\_time\_unit}}
+\index{forecast\_time\_unit@{forecast\_time\_unit}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{forecast\_time\_unit}{forecast\_time\_unit}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::forecast\+\_\+time\+\_\+unit}
+
+
+
+Единица времени прогноза \mbox{\hyperlink{tablessection1_8h}{tablessection1.\+h}} Time\+Unit. 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a4bc769b204e5eacc615d84608bb3e3f4}\label{struct_p_d_s_1_1_data_a4bc769b204e5eacc615d84608bb3e3f4}} 
+\index{PDS::Data@{PDS::Data}!GDS@{GDS}}
+\index{GDS@{GDS}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{GDS}{GDS}}
+{\footnotesize\ttfamily bool P\+D\+S\+::\+Data\+::\+G\+DS}
+
+
+
+Флаг наличия \mbox{\hyperlink{class_g_d_s}{G\+DS}}(true-\/included,else omitted) 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ab4bfc8749a00140f029205096a1775c5}\label{struct_p_d_s_1_1_data_ab4bfc8749a00140f029205096a1775c5}} 
+\index{PDS::Data@{PDS::Data}!generating\_process\_ID\_number@{generating\_process\_ID\_number}}
+\index{generating\_process\_ID\_number@{generating\_process\_ID\_number}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{generating\_process\_ID\_number}{generating\_process\_ID\_number}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::generating\+\_\+process\+\_\+\+I\+D\+\_\+number}
+
+
+
+Цифровой ID процесса генерации 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ae281f896774127cbafef3c333e8b4108}\label{struct_p_d_s_1_1_data_ae281f896774127cbafef3c333e8b4108}} 
+\index{PDS::Data@{PDS::Data}!grid\_identification@{grid\_identification}}
+\index{grid\_identification@{grid\_identification}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{grid\_identification}{grid\_identification}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::grid\+\_\+identification}
+
+
+
+Идентификация сетки (географическое положение и площадь) 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a86244ebb01b3e0fb4d357d09d8ca54fe}\label{struct_p_d_s_1_1_data_a86244ebb01b3e0fb4d357d09d8ca54fe}} 
+\index{PDS::Data@{PDS::Data}!hour@{hour}}
+\index{hour@{hour}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::hour}
+
+
+
+Час 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a36dbb09bc459f405db7c51219f02f2de}\label{struct_p_d_s_1_1_data_a36dbb09bc459f405db7c51219f02f2de}} 
+\index{PDS::Data@{PDS::Data}!identification\_of\_center@{identification\_of\_center}}
+\index{identification\_of\_center@{identification\_of\_center}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{identification\_of\_center}{identification\_of\_center}}
+{\footnotesize\ttfamily string P\+D\+S\+::\+Data\+::identification\+\_\+of\+\_\+center}
+
+
+
+Идентификатор центрального производителя 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a3161567f137f9bae1dca5f93e2b42bbc}\label{struct_p_d_s_1_1_data_a3161567f137f9bae1dca5f93e2b42bbc}} 
+\index{PDS::Data@{PDS::Data}!identification\_of\_sub\_center@{identification\_of\_sub\_center}}
+\index{identification\_of\_sub\_center@{identification\_of\_sub\_center}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{identification\_of\_sub\_center}{identification\_of\_sub\_center}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::identification\+\_\+of\+\_\+sub\+\_\+center}
+
+
+
+Указатель подцентра 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a4c42bafbe0dbd9da9cc7261f2a51ac7f}\label{struct_p_d_s_1_1_data_a4c42bafbe0dbd9da9cc7261f2a51ac7f}} 
+\index{PDS::Data@{PDS::Data}!indicator\_of\_parameter\_and\_units@{indicator\_of\_parameter\_and\_units}}
+\index{indicator\_of\_parameter\_and\_units@{indicator\_of\_parameter\_and\_units}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{indicator\_of\_parameter\_and\_units}{indicator\_of\_parameter\_and\_units}}
+{\footnotesize\ttfamily string P\+D\+S\+::\+Data\+::indicator\+\_\+of\+\_\+parameter\+\_\+and\+\_\+units}
+
+
+
+Индикатор параметра и единиц измерения 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ac87d2cb2f34ac98ef4ff960e2df4f6ce}\label{struct_p_d_s_1_1_data_ac87d2cb2f34ac98ef4ff960e2df4f6ce}} 
+\index{PDS::Data@{PDS::Data}!indicator\_of\_type\_of\_level\_or\_layer@{indicator\_of\_type\_of\_level\_or\_layer}}
+\index{indicator\_of\_type\_of\_level\_or\_layer@{indicator\_of\_type\_of\_level\_or\_layer}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{indicator\_of\_type\_of\_level\_or\_layer}{indicator\_of\_type\_of\_level\_or\_layer}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::indicator\+\_\+of\+\_\+type\+\_\+of\+\_\+level\+\_\+or\+\_\+layer}
+
+
+
+Индикатор типа уровня или слоя 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a1f03713e31d69b0883b492e137fe6c4f}\label{struct_p_d_s_1_1_data_a1f03713e31d69b0883b492e137fe6c4f}} 
+\index{PDS::Data@{PDS::Data}!info\_of\_the\_level\_or\_layer@{info\_of\_the\_level\_or\_layer}}
+\index{info\_of\_the\_level\_or\_layer@{info\_of\_the\_level\_or\_layer}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{info\_of\_the\_level\_or\_layer}{info\_of\_the\_level\_or\_layer}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::info\+\_\+of\+\_\+the\+\_\+level\+\_\+or\+\_\+layer}
+
+
+
+Высота, давление и т. д. уровня или слоя 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a71ab8917eb8a0ad87471cb560de52a1f}\label{struct_p_d_s_1_1_data_a71ab8917eb8a0ad87471cb560de52a1f}} 
+\index{PDS::Data@{PDS::Data}!minut@{minut}}
+\index{minut@{minut}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{minut}{minut}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::minut}
+
+
+
+Минута 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ab1af9e6c588aca3d421f7139b7e5a92a}\label{struct_p_d_s_1_1_data_ab1af9e6c588aca3d421f7139b7e5a92a}} 
+\index{PDS::Data@{PDS::Data}!month@{month}}
+\index{month@{month}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::month}
+
+
+
+Месяц 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ac68a0f040cfb731bad82135758efafc6}\label{struct_p_d_s_1_1_data_ac68a0f040cfb731bad82135758efafc6}} 
+\index{PDS::Data@{PDS::Data}!number\_missing\_from\_averages\_or\_accumulations@{number\_missing\_from\_averages\_or\_accumulations}}
+\index{number\_missing\_from\_averages\_or\_accumulations@{number\_missing\_from\_averages\_or\_accumulations}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{number\_missing\_from\_averages\_or\_accumulations}{number\_missing\_from\_averages\_or\_accumulations}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::number\+\_\+missing\+\_\+from\+\_\+averages\+\_\+or\+\_\+accumulations}
+
+
+
+Число утраченных случаев в расчете в случае статистической обработки 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a4e7efdbfd357564309b8b2bb479b6cc9}\label{struct_p_d_s_1_1_data_a4e7efdbfd357564309b8b2bb479b6cc9}} 
+\index{PDS::Data@{PDS::Data}!P1@{P1}}
+\index{P1@{P1}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{P1}{P1}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::\+P1}
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a8631a37207d8a68fc89124d0d548c081}\label{struct_p_d_s_1_1_data_a8631a37207d8a68fc89124d0d548c081}} 
+\index{PDS::Data@{PDS::Data}!P2@{P2}}
+\index{P2@{P2}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{P2}{P2}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::\+P2}
+
+
+
+Периоды времени 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_acb395bce70d398f8f950f6c9ec60282e}\label{struct_p_d_s_1_1_data_acb395bce70d398f8f950f6c9ec60282e}} 
+\index{PDS::Data@{PDS::Data}!parameter\_table\_version\_number@{parameter\_table\_version\_number}}
+\index{parameter\_table\_version\_number@{parameter\_table\_version\_number}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{parameter\_table\_version\_number}{parameter\_table\_version\_number}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::parameter\+\_\+table\+\_\+version\+\_\+number}
+
+
+
+Номер версии основных таблиц G\+R\+IB. 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_aae419e3cd72eab60361bd4769460eb50}\label{struct_p_d_s_1_1_data_aae419e3cd72eab60361bd4769460eb50}} 
+\index{PDS::Data@{PDS::Data}!periodSec@{periodSec}}
+\index{periodSec@{periodSec}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{periodSec}{periodSec}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::period\+Sec}
+
+
+
+Период в секундах 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a36044bbfb284fb2250a973fa26a41d38}\label{struct_p_d_s_1_1_data_a36044bbfb284fb2250a973fa26a41d38}} 
+\index{PDS::Data@{PDS::Data}!refDate@{refDate}}
+\index{refDate@{refDate}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{refDate}{refDate}}
+{\footnotesize\ttfamily long long P\+D\+S\+::\+Data\+::ref\+Date}
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_a8883634706a29dd398a366bc14d85387}\label{struct_p_d_s_1_1_data_a8883634706a29dd398a366bc14d85387}} 
+\index{PDS::Data@{PDS::Data}!sectionLength@{sectionLength}}
+\index{sectionLength@{sectionLength}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{sectionLength}{sectionLength}}
+{\footnotesize\ttfamily long P\+D\+S\+::\+Data\+::section\+Length}
+
+
+
+Длина секции 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_ab64ae17c2b0435a27b3f1863c2c261ca}\label{struct_p_d_s_1_1_data_ab64ae17c2b0435a27b3f1863c2c261ca}} 
+\index{PDS::Data@{PDS::Data}!time\_range\_indicator@{time\_range\_indicator}}
+\index{time\_range\_indicator@{time\_range\_indicator}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{time\_range\_indicator}{time\_range\_indicator}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::time\+\_\+range\+\_\+indicator}
+
+
+
+Указатель времени 
+
+\mbox{\Hypertarget{struct_p_d_s_1_1_data_aace5b13b98467271cc4d3584a03ff44f}\label{struct_p_d_s_1_1_data_aace5b13b98467271cc4d3584a03ff44f}} 
+\index{PDS::Data@{PDS::Data}!year@{year}}
+\index{year@{year}!PDS::Data@{PDS::Data}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily int P\+D\+S\+::\+Data\+::year}
+
+
+
+Год 
+
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kicha/\+Documents/\+Qt/parser/\mbox{\hyperlink{pds_8h}{pds.\+h}}\end{DoxyCompactItemize}
