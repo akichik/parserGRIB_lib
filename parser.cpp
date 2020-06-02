@@ -68,18 +68,10 @@ QList<QList<paramData>> Parser::parameterData(int param)
                     p.parValue=data[i].sec4.pointData[j*data[i].sec2.Ni+k];
                     p.year=data[i].sec1.year;
                     p.month=data[i].sec1.month;
-
-                    if(data[i].sec1.P2+data[i].sec1.hour>=24 && data[i].sec1.forecast_time_unit==static_cast<int>(TimeUnit::hour)) {
-                        p.day=data[i].sec1.day+1;
-                        p.hour=data[i].sec1.P2+data[i].sec1.hour-24;
-                    }
-                    else if(data[i].sec1.P2!=0 && data[i].sec1.forecast_time_unit==static_cast<int>(TimeUnit::hour))
-                        p.hour=data[i].sec1.hour;
-                    else {
-                        p.hour=data[i].sec1.hour;
-                        p.day=data[i].sec1.day;
-                    }
+                    p.day=data[i].sec1.day;
+                    p.hour=data[i].sec1.hour;
                     p.minut=data[i].sec1.minut;
+
                     pData.push_back(p);
                 }
             }

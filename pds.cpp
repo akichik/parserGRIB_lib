@@ -46,6 +46,7 @@ void PDS::readSec(ifstream *file, PDS::Data *d)
     d->day=message[14];
     d->hour=message[15];
     d->minut=(int)message[16];
+
     d->refDate=UTC_mktime(d->year,d->month,d->day,d->hour,d->minut,0);
     cout<<"date "<<d->year<<"."<<d->month<<"."<<d->day<<endl;
     cout<<"time "<<d->hour<<":"<<d->minut<<endl;
@@ -54,6 +55,16 @@ void PDS::readSec(ifstream *file, PDS::Data *d)
     d->P1=message[18];
     d->P2=message[19];
     d->time_range_indicator=message[20];
+    if(d->P2!=0&& d->forecast_time_unit==TimeUnit::hour){
+        if(d->P2+d->hour>=24) {
+            d->day=d->day+1;
+            d->hour=d->P2+d->hour-24;
+        }
+        else d->hour=d->P2+d->hour;
+    }
+
+
+
     d->periodSec=period (d->forecast_time_unit,d->P1,d->P2,d->time_range_indicator);
     d->curDate=UTC_mktime(d->year,d->month,d->day,d->hour,d->minut,d->periodSec);
     //21,22?
@@ -169,25 +180,25 @@ string PDS::dataType(char a)
     case GRB_PRESSURE:
         s="Pressure";
         break;
-    case static_cast<int>(dataTypes::GRB_PRESSURE_MSL):
+    case static_cast<int>(DataTypes::GRB_PRESSURE_MSL):
         s="Pressure_Msl";
         break;
-    case static_cast<int>(dataTypes::GRB_GEOPOT_HGT):
+    case static_cast<int>(DataTypes::GRB_GEOPOT_HGT):
         s="Geopot_Hgt";
         break;
-    case static_cast<int>(dataTypes::GRB_TEMP):
+    case static_cast<int>(DataTypes::GRB_TEMP):
         s="Temp";
         break;
-    case static_cast<int>(dataTypes::GRB_TEMP_POT):
+    case static_cast<int>(DataTypes::GRB_TEMP_POT):
         s="Temp_pot";
         break;
-    case static_cast<int>(dataTypes::GRB_TMAX):
+    case static_cast<int>(DataTypes::GRB_TMAX):
         s="temp_MAX";
         break;
-    case static_cast<int>(dataTypes::GRB_TMIN):
+    case static_cast<int>(DataTypes::GRB_TMIN):
         s="temp_MIN";
         break;
-    case static_cast<int>(dataTypes::GRB_WIND_SPEED):
+    case static_cast<int>(DataTypes::GRB_WIND_SPEED):
         s="wind_speed";
         break;
     default:

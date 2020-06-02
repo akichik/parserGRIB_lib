@@ -10,7 +10,7 @@
  * Указатель параметра
  * Фиксированные уровни или слои, дл которых включаются данные
  */
-enum class OrigCenters ///<Идентификатор центра
+enum OrigCenters ///<Идентификатор центра
 {
     USWS_NationalMetCenter=7,
     USWS_NWSTelecommsGateway=8,
@@ -28,7 +28,7 @@ enum class OrigCenters ///<Идентификатор центра
     DeBilt=99
 };
 
-enum class TimeUnit ///< Единица времени
+enum TimeUnit ///< Единица времени
 {
     minute=0,///< Минута
     hour=1,///< Час
@@ -41,7 +41,7 @@ enum class TimeUnit ///< Единица времени
     second=254///< Секунда
 };
 
-enum dataTypes///< Указатель параметра
+enum DataTypes///< Указатель параметра
 {
 GRB_PRESSURE= 1,  ///< Давление, Pa
 GRB_PRESSURE_MSL=2,  ///< Давление, приведенное к среднему уровню моря, Pa
@@ -82,7 +82,7 @@ GRB_WAV_SCDY_PER=110,   ///< Вторичный средний период во
 
 };
 
-enum class levelType///< Тип уровня или слоя
+enum levelType///< Тип уровня или слоя
 {
     LV_GND_SURF=1, ///< Земная или водная поверхность
     LV_ISOTHERM0=4, ///< Уровень изотермы
